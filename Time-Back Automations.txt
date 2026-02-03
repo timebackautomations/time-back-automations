@@ -1,0 +1,2176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time-Back Automations | Digital Foundations for African Businesses</title>
+    <meta name="description" content="Get a complete digital foundation built for African businesses. Professional website + WhatsApp Business integration + lead capture system. Delivered in 2 weeks.">
+    <meta name="keywords" content="Ghana business automation, African business website, WhatsApp Business Ghana, lead capture system, digital transformation Ghana, SME automation">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Your Business Needs More Than Just a Website">
+    <meta property="og:description" content="Professional website + WhatsApp Business integration + lead capture system. Delivered in 2 weeks. Built for African businesses.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://timebackautomations.com">
+    <meta property="og:image" content="https://timebackautomations.com/images/og-image.jpg">
+    
+    <!-- Facebook Specific -->
+    <meta property="fb:app_id" content="61586824116948">
+    <meta property="og:site_name" content="Time-Back Automations">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Time-Back Automations - Digital Foundations for African Businesses">
+    <meta name="twitter:description" content="From WhatsApp chaos to digital clarity in 2 weeks">
+    
+    <!-- Add with your other meta tags -->
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' https://www.googletagmanager.com https://connect.facebook.net https://cdnjs.cloudflare.com 'unsafe-inline';">
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="https://favicon.io/static/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://favicon.io/static/favicons/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://favicon.io/static/favicons/apple-touch-icon.png">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Time-Back Automations",
+        "description": "Digital Foundations for African Businesses - Website + WhatsApp Business + Lead Capture in 2 weeks",
+        "url": "https://timebackautomations.com",
+        "telephone": "+233-530-453-400",
+        "email": "timebackautomation26@gmail.com",
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "GH",
+            "addressRegion": "Greater Accra",
+            "addressLocality": "Accra"
+        },
+        "serviceType": ["Web Development", "Business Automation", "Digital Transformation"],
+        "areaServed": ["GH", "NG", "KE", "ZA"],
+        "founder": {
+            "@type": "Person",
+            "name": "Innocent",
+            "jobTitle": "Digital Architect"
+        },
+        "priceRange": "GH₵12,000 - GH₵20,000",
+        "currenciesAccepted": "GHS, USD",
+        "openingHours": "Mo-Fr 09:00-18:00, Sa 10:00-14:00",
+        "paymentAccepted": "Mobile Money, Bank Transfer",
+        "knowsAbout": ["African Business Technology", "WhatsApp Business API", "Mobile-First Web Design", "Lead Capture Systems"]
+    }
+    </script>
+    
+    <!-- Google Analytics - Updated for cookieless tracking -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-407X5340V5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      
+      // Configure with privacy settings
+      gtag('config', 'G-407X5340V5', {
+        'anonymize_ip': true,
+        'allow_google_signals': false,
+        'allow_ad_personalization_signals': false,
+        'restricted_data_processing': true,
+        'client_storage': 'none', // Disable cookies
+        'use_amp_client_id': false
+      });
+      
+      // Consent mode setup
+      gtag('consent', 'default', {
+        'ad_storage': 'denied',
+        'analytics_storage': 'denied',
+        'personalization_storage': 'denied',
+        'functionality_storage': 'denied',
+        'security_storage': 'granted'
+      });
+    </script>
+    
+    <!-- Facebook Pixel -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      
+      // Initialize with modern settings
+      fbq('init', '61586824116948', {
+        em: '',
+        external_id: '',
+        autoConfig: false,
+        debug: false
+      });
+      
+      // Set data processing options (GDPR compliant)
+      fbq('dataProcessingOptions', ['LDU'], 0, 0);
+      
+      // Disable specific deprecated features
+      try {
+        fbq('set', 'autoConfig', false, '61586824116948');
+        fbq('set', 'disablePushState', true);
+        fbq('set', 'enableAdvertisingFeatures', false);
+      } catch(e) {}
+      
+      // Track page view
+      fbq('track', 'PageView');
+      
+      // Function to update with user data when available
+      window.updateFacebookPixel = function(email, userId) {
+        if (typeof fbq !== 'undefined') {
+          fbq('init', '61586824116948', {
+            em: email,
+            external_id: userId,
+            autoConfig: false
+          });
+        }
+      };
+    </script>
+    <noscript>
+      <img height="1" width="1" style="display:none" 
+           src="https://www.facebook.com/tr?id=61586824116948&ev=PageView&noscript=1"
+           alt="Facebook Pixel" />
+    </noscript>
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Page Loader -->
+    <style>
+        .page-loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #0A0E27;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            transition: opacity 0.5s ease;
+        }
+        
+        .page-loader.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+        
+        .loader-logo {
+            font-size: 2rem;
+            font-weight: 800;
+            color: white;
+            animation: pulse 1.5s ease-in-out infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.7; transform: scale(0.95); }
+        }
+    </style>
+    
+    <!-- Inlined Critical CSS -->
+    <style>
+        :root {
+            --color-primary: #667EEA;
+            --color-primary-dark: #5A67D8;
+            --color-secondary: #764BA2;
+            --color-dark: #0A0E27;
+            --color-dark-light: #1a1f3a;
+            --color-light: #F7FAFC;
+            --color-white: #FFFFFF;
+            --color-text: #2D3748;
+            --color-text-light: #718096;
+            --color-success: #48BB78;
+            --color-warning: #ED8936;
+            --color-border: #E2E8F0;
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.12);
+            --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
+            --shadow-lg: 0 10px 25px rgba(0,0,0,0.1);
+            --radius: 8px;
+            --transition: all 0.3s ease;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--color-text);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        section {
+            padding: 80px 0;
+        }
+        
+        h1, h2, h3, h4 {
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 800;
+        }
+        
+        h2 {
+            font-size: 2.5rem;
+        }
+        
+        h3 {
+            font-size: 1.5rem;
+        }
+        
+        p {
+            margin-bottom: 1rem;
+            color: var(--color-text-light);
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 14px 32px;
+            background: var(--color-primary);
+            color: white;
+            border: none;
+            border-radius: var(--radius);
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+            font-size: 1rem;
+            text-decoration: none;
+            cursor: pointer;
+            transition: var(--transition);
+            text-align: center;
+            box-shadow: var(--shadow-md);
+        }
+        
+        .btn:hover {
+            background: var(--color-primary-dark);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .btn-secondary {
+            background: var(--color-secondary);
+        }
+        
+        .btn-secondary:hover {
+            background: #6B46C1;
+        }
+        
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--color-primary);
+            color: var(--color-primary);
+        }
+        
+        .btn-outline:hover {
+            background: var(--color-primary);
+            color: white;
+        }
+        
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: var(--color-white);
+            box-shadow: var(--shadow-sm);
+            z-index: 1000;
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--color-dark);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .logo span {
+            color: var(--color-primary);
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 32px;
+        }
+        
+        .nav-links a {
+            color: var(--color-text);
+            text-decoration: none;
+            font-weight: 500;
+            transition: var(--transition);
+        }
+        
+        .nav-links a:hover {
+            color: var(--color-primary);
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--color-text);
+        }
+        
+        /* Hero Section */
+        .hero {
+            padding-top: 140px;
+            padding-bottom: 80px;
+            background: linear-gradient(135deg, var(--color-dark), var(--color-dark-light));
+            color: var(--color-white);
+        }
+        
+        .hero h1 {
+            color: var(--color-white);
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .hero p {
+            color: rgba(255,255,255,0.9);
+            font-size: 1.25rem;
+            max-width: 600px;
+            margin-bottom: 2rem;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            gap: 20px;
+            margin-top: 2rem;
+        }
+        
+        /* Problem Section */
+        .problem {
+            background: var(--color-white);
+        }
+        
+        .problem h2 {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .problem-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+        
+        .problem-list {
+            list-style: none;
+        }
+        
+        .problem-list li {
+            margin-bottom: 1.5rem;
+            padding-left: 32px;
+            position: relative;
+            color: var(--color-text-light);
+        }
+        
+        .problem-list li:before {
+            content: '❌';
+            position: absolute;
+            left: 0;
+            color: var(--color-warning);
+        }
+        
+        /* Solution Section */
+        .solution {
+            background: var(--color-light);
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .section-header p {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+        
+        .feature-card {
+            background: var(--color-white);
+            padding: 40px 30px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        /* How It Works Section */
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .timeline:before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--color-primary);
+            transform: translateX(-50%);
+        }
+        
+        .timeline-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 60px;
+            position: relative;
+        }
+        
+        .timeline-item:nth-child(odd) {
+            flex-direction: row-reverse;
+        }
+        
+        .timeline-content {
+            flex: 1;
+            padding: 30px;
+            background: var(--color-white);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-md);
+        }
+        
+        .timeline-marker {
+            width: 20px;
+            height: 20px;
+            background: var(--color-primary);
+            border-radius: 50%;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+        }
+        
+        /* What's Included Section */
+        .included {
+            background: var(--color-light);
+        }
+        
+        .included-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+        
+        .included-category {
+            background: var(--color-white);
+            padding: 30px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-sm);
+        }
+        
+        .included-list {
+            list-style: none;
+        }
+        
+        .included-list li {
+            margin-bottom: 10px;
+            padding-left: 24px;
+            position: relative;
+        }
+        
+        .included-list li:before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--color-success);
+            font-weight: bold;
+        }
+        
+        /* Pricing Section */
+        .pricing {
+            background: var(--color-white);
+        }
+        
+        .pricing-card {
+            max-width: 600px;
+            margin: 0 auto;
+            background: var(--color-white);
+            padding: 60px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-lg);
+            text-align: center;
+            border: 3px solid var(--color-primary);
+        }
+        
+        .price {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--color-primary);
+            margin: 1.5rem 0;
+        }
+        
+        .price-note {
+            color: var(--color-text-light);
+            font-size: 0.9rem;
+            margin-top: 2rem;
+        }
+        
+        /* Contact Form Section - NEW! */
+        .contact-form {
+            background: var(--color-light);
+        }
+        
+        /* Final CTA */
+        .final-cta {
+            background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+            color: var(--color-white);
+            text-align: center;
+        }
+        
+        .final-cta h2, .final-cta p {
+            color: var(--color-white);
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--color-dark);
+            color: var(--color-white);
+            padding: 60px 0 30px;
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+        }
+        
+        .footer-logo span {
+            color: var(--color-primary);
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 1rem;
+        }
+        
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: rgba(255,255,255,0.1);
+            color: var(--color-white);
+            border-radius: 50%;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        .social-links a:hover {
+            background: var(--color-primary);
+            transform: translateY(-3px);
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links a {
+            color: rgba(255,255,255,0.8);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        .footer-links a:hover {
+            color: var(--color-primary);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: rgba(255,255,255,0.6);
+            font-size: 0.9rem;
+        }
+        
+        /* WhatsApp Floating Button - NEW! */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: #25D366;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+            z-index: 999;
+            transition: var(--transition);
+            text-decoration: none;
+        }
+        
+        .whatsapp-float:hover {
+            background: #20BA5A;
+            transform: scale(1.1);
+            box-shadow: 0 6px 16px rgba(37, 211, 102, 0.6);
+        }
+        
+        /* Scroll to Top Button - NEW! */
+        .scroll-top-btn {
+            position: fixed;
+            bottom: 100px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background: var(--color-primary);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            font-size: 1.2rem;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+            z-index: 998;
+            box-shadow: var(--shadow-md);
+        }
+        
+        .scroll-top-btn.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .scroll-top-btn:hover {
+            background: var(--color-primary-dark);
+            transform: translateY(-3px);
+        }
+        
+        /* AI Analysis Modal */
+        .ai-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.8);
+            z-index: 9999;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            animation: fadeIn 0.3s ease;
+        }
+        
+        .ai-modal.active {
+            display: flex;
+        }
+        
+        .ai-modal-content {
+            background: white;
+            border-radius: var(--radius);
+            max-width: 800px;
+            width: 100%;
+            max-height: 90vh;
+            overflow-y: auto;
+            box-shadow: var(--shadow-lg);
+            animation: slideUp 0.3s ease;
+        }
+        
+        .ai-modal-header {
+            padding: 25px 30px;
+            background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+            color: white;
+            border-radius: var(--radius) var(--radius) 0 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .ai-modal-header h3 {
+            color: white;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .ai-modal-body {
+            padding: 30px;
+        }
+        
+        .ai-typing {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 20px 0;
+            padding: 15px;
+            background: var(--color-light);
+            border-radius: var(--radius);
+        }
+        
+        .ai-typing-dots {
+            display: flex;
+            gap: 5px;
+        }
+        
+        .ai-typing-dots span {
+            width: 8px;
+            height: 8px;
+            background: var(--color-primary);
+            border-radius: 50%;
+            animation: typing 1.4s infinite;
+        }
+        
+        .ai-typing-dots span:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+        
+        .ai-typing-dots span:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+        
+        .ai-analysis-section {
+            margin: 25px 0;
+            padding: 20px;
+            border-radius: var(--radius);
+            background: var(--color-light);
+        }
+        
+        .ai-recommendation {
+            background: #E6FFFA;
+            border-left: 4px solid #38B2AC;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: var(--radius);
+        }
+        
+        .ai-roi-calculator {
+            background: #FAF5FF;
+            border-left: 4px solid #9F7AEA;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: var(--radius);
+        }
+        
+        .ai-next-steps {
+            background: #EBF8FF;
+            border-left: 4px solid #4299E1;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: var(--radius);
+        }
+        
+        .ai-close-btn {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: 5px;
+        }
+        
+        /* Form Styles */
+        #auditForm input:focus,
+        #auditForm textarea:focus,
+        #auditForm select:focus {
+            outline: none;
+            border-color: var(--color-primary);
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+            transition: var(--transition);
+        }
+        
+        #auditForm select option {
+            padding: 10px;
+        }
+        
+        /* Success Message Animation */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes slideUp {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        
+        @keyframes typing {
+            0%, 60%, 100% { transform: translateY(0); }
+            30% { transform: translateY(-10px); }
+        }
+        
+        #formMessage {
+            animation: pulseSuccess 2s ease-in-out;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            h2 {
+                font-size: 2rem;
+            }
+            
+            .features-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .footer-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .timeline:before {
+                left: 30px;
+            }
+            
+            .timeline-item {
+                flex-direction: row !important;
+                padding-left: 60px;
+            }
+            
+            .timeline-marker {
+                left: 30px;
+            }
+            
+            .timeline-content {
+                width: 100%;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .header-container {
+                padding: 15px 0;
+            }
+            
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: var(--color-white);
+                flex-direction: column;
+                padding: 20px;
+                box-shadow: var(--shadow-md);
+            }
+            
+            .nav-links.active {
+                display: flex;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .hero {
+                padding-top: 120px;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+            }
+            
+            .problem-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .included-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .pricing-card {
+                padding: 40px 20px;
+            }
+            
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .whatsapp-float {
+                bottom: 20px;
+                right: 20px;
+                width: 50px;
+                height: 50px;
+                font-size: 1.5rem;
+            }
+            
+            .scroll-top-btn {
+                bottom: 80px;
+                right: 20px;
+                width: 45px;
+                height: 45px;
+            }
+            
+            .ai-modal-content {
+                margin: 10px;
+                max-height: 95vh;
+            }
+            
+            .ai-modal-header {
+                padding: 20px;
+            }
+            
+            .ai-modal-body {
+                padding: 20px;
+            }
+            
+            #auditForm {
+                padding: 25px 20px !important;
+            }
+            
+            #auditForm select,
+            #auditForm input,
+            #auditForm textarea {
+                font-size: 16px !important; /* Prevents zoom on iOS */
+            }
+        }
+        
+        @media (max-width: 480px) {
+            section {
+                padding: 60px 0;
+            }
+            
+            .container {
+                padding: 0 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Page Loader -->
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-logo">
+            <i class="fas fa-robot"></i> TIME-BACK
+        </div>
+    </div>
+
+    <!-- AI Analysis Modal -->
+    <div class="ai-modal" id="aiModal">
+        <div class="ai-modal-content">
+            <div class="ai-modal-header">
+                <h3><i class="fas fa-robot"></i> AI-Powered Business Analysis</h3>
+                <button class="ai-close-btn" id="aiCloseBtn">×</button>
+            </div>
+            <div class="ai-modal-body" id="aiModalBody">
+                <!-- AI content will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="#home" class="logo">
+                <i class="fas fa-robot"></i>
+                TIME-BACK<span>AUTOMATIONS</span>
+            </a>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav class="nav-links" id="navLinks">
+                <a href="#home">Home</a>
+                <a href="#problem">Problem</a>
+                <a href="#solution">Solution</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#included">What's Included</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#contact-form" class="btn">Free Audit</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Your Business Needs More Than Just a Website</h1>
+            <p>Get a complete digital foundation built for African businesses. Professional website + WhatsApp Business integration + lead capture system. Delivered in 2 weeks.</p>
+            
+            <div class="hero-buttons">
+                <a href="#contact-form" class="btn">Book Your Free Digital Audit →</a>
+                <a href="#how-it-works" class="btn btn-outline" style="color: white; border-color: white;">See How It Works ↓</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section id="problem" class="problem">
+        <div class="container">
+            <h2>Still Running Your Business Through WhatsApp and Excel?</h2>
+            
+            <div class="problem-grid">
+                <div>
+                    <p>You're not alone. 90% of Ghanaian SMEs operate without proper digital systems.</p>
+                    <p>The cost of manual operations:</p>
+                    <ul class="problem-list">
+                        <li>Lost leads because there's no follow-up system</li>
+                        <li>Unprofessional image without a real website</li>
+                        <li>Everything lives in your head, not in systems</li>
+                        <li>Can't scale because your processes break as you grow</li>
+                    </ul>
+                    <p>This costs the average business GH₵80,000-200,000/year in lost revenue.</p>
+                    <p><strong>There's a better way.</strong></p>
+                </div>
+                <div>
+                    <div style="background: linear-gradient(135deg, #667EEA, #764BA2); border-radius: var(--radius); padding: 60px; text-align: center; color: white;">
+                        <div style="font-size: 4rem; margin-bottom: 20px;">📊</div>
+                        <h3 style="color: white; margin-bottom: 15px;">Manual Chaos</h3>
+                        <p style="color: rgba(255,255,255,0.9);">WhatsApp messages, Excel sheets, forgotten follow-ups, lost opportunities</p>
+                        <p style="font-size: 2rem; margin: 30px 0;">↓</p>
+                        <div style="font-size: 4rem; margin-bottom: 20px;">✨</div>
+                        <h3 style="color: white; margin-bottom: 15px;">Digital Clarity</h3>
+                        <p style="color: rgba(255,255,255,0.9);">Automated systems, organized data, nothing falls through cracks</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section id="solution" class="solution">
+        <div class="container">
+            <div class="section-header">
+                <h2>The Digital Foundation Built for African Businesses</h2>
+                <p>Everything you need to run a modern business. Nothing you don't.</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Professional Website</h3>
+                    <p>5-page mobile-optimized site that works on slow connections. Looks sharp on smartphones where 70% of your customers are. Fast, professional, conversion-focused.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">💬</div>
+                    <h3>WhatsApp Business Integration</h3>
+                    <p>Customers click one button → instant WhatsApp chat with you. Automated welcome messages. Professional business profile. Works with the platform Ghanaians already trust.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Lead Capture System</h3>
+                    <p>Every visitor can request a quote instantly. Leads automatically saved to your system. Never lose a potential customer again. Simple dashboard to track everything.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2>From Zero to Digital in 2 Weeks</h2>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Week 1: Discovery & Build</h3>
+                        <p>→ Kickoff call to understand your business</p>
+                        <p>→ We build your complete digital foundation</p>
+                        <p>→ You review and give feedback</p>
+                        <p>→ We refine until it's perfect</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Week 2: Training & Launch</h3>
+                        <p>→ Training sessions (learn how to use everything)</p>
+                        <p>→ Video tutorials you can replay anytime</p>
+                        <p>→ Go live with your new digital foundation</p>
+                        <p>→ 30 days of support included</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>After Launch</h3>
+                        <p>→ You have a professional digital presence</p>
+                        <p>→ Customers find you online</p>
+                        <p>→ Leads flow into your system automatically</p>
+                        <p>→ You focus on growth, not manual work</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What's Included Section -->
+    <section id="included" class="included">
+        <div class="container">
+            <div class="section-header">
+                <h2>Everything You Need to Compete Digitally</h2>
+            </div>
+            
+            <div class="included-grid">
+                <div class="included-category">
+                    <h3>Website Foundation</h3>
+                    <ul class="included-list">
+                        <li>5 professionally designed pages</li>
+                        <li>Mobile-optimized (works on any device)</li>
+                        <li>Fast loading (even on slow connections)</li>
+                        <li>SEO basics (so customers can find you)</li>
+                        <li>Contact forms</li>
+                        <li>Google Maps integration</li>
+                    </ul>
+                </div>
+                
+                <div class="included-category">
+                    <h3>WhatsApp Business</h3>
+                    <ul class="included-list">
+                        <li>Click-to-chat button on your site</li>
+                        <li>Automated welcome messages</li>
+                        <li>Professional business profile</li>
+                        <li>Quick reply templates</li>
+                        <li>Mobile Money payment links ready</li>
+                    </ul>
+                </div>
+                
+                <div class="included-category">
+                    <h3>Lead Management</h3>
+                    <ul class="included-list">
+                        <li>Lead capture forms</li>
+                        <li>Automatic email notifications</li>
+                        <li>Simple dashboard to track leads</li>
+                        <li>Follow-up reminders</li>
+                        <li>Basic analytics</li>
+                    </ul>
+                </div>
+                
+                <div class="included-category">
+                    <h3>Training & Support</h3>
+                    <ul class="included-list">
+                        <li>1 week of hands-on training</li>
+                        <li>Video tutorials (lifetime access)</li>
+                        <li>30 days of technical support</li>
+                        <li>Documentation</li>
+                        <li>Monthly check-in (first 3 months)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2>Investment That Pays for Itself</h2>
+            </div>
+            
+            <div class="pricing-card">
+                <h3>The Digital Foundation Package</h3>
+                
+                <div class="price">
+                    GH₵12,000 - GH₵20,000
+                </div>
+                <p>(~$2,500 - $4,000 USD)</p>
+                
+                <p><strong>What's Included:</strong></p>
+                <ul class="included-list" style="text-align: left; display: inline-block; margin: 20px 0;">
+                    <li>Everything listed above</li>
+                    <li>2-week delivery</li>
+                    <li>Payment plans available</li>
+                    <li>30-day money-back guarantee*</li>
+                </ul>
+                
+                <div style="background: #FFFBEB; padding: 20px; border-radius: var(--radius); margin: 30px 0; border-left: 4px solid #F6AD55;">
+                    <h4 style="color: #DD6B20; margin-bottom: 10px;">Special: Founding Client Price</h4>
+                    <p style="color: var(--color-text);">First 5 businesses: <strong>GH₵7,500</strong> (~$1,500 USD)</p>
+                    <p style="color: var(--color-text-light); font-size: 0.9rem;">In exchange: Detailed testimonial + 2 referrals</p>
+                </div>
+                
+                <a href="#contact-form" class="btn">Book Free Audit →</a>
+                
+                <p class="price-note">*If we don't deliver as promised, full refund. No questions asked.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Updated Contact Form Section -->
+    <section id="contact-form" class="contact-form">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get Your Free Digital Health Audit</h2>
+                <p>Tell us about your biggest business pain points for personalized automation recommendations.</p>
+            </div>
+            
+            <div style="max-width: 600px; margin: 0 auto;">
+                <form id="auditForm" style="background: var(--color-white); padding: 40px; border-radius: var(--radius); box-shadow: var(--shadow-lg);">
+                    <!-- Basic Info -->
+                    <div style="margin-bottom: 20px;">
+                        <label for="name" style="display: block; margin-bottom: 8px; font-weight: 500; color: var(--color-text);">Full Name *</label>
+                        <input type="text" id="name" name="name" required 
+                            placeholder="Your full name"
+                            style="width: 100%; padding: 12px; border: 1px solid var(--color-border); border-radius: var(--radius); font-family: 'Inter', sans-serif; font-size: 1rem;">
+                    </div>
+                    
+                    <div style="margin-bottom: 20px;">
+                        <label for="email" style="display: block; margin-bottom: 8px; font-weight: 500; color: var(--color-text);">Email Address *</label>
+                        <input type="email" id="email" name="email" required 
+                            placeholder="your@business.com"
+                            style="width: 100%; padding: 12px; border: 1px solid var(--color-border); border-radius: var(--radius); font-family: 'Inter', sans-serif; font-size: 1rem;">
+                    </div>
+                    
+                    <div style="margin-bottom: 20px;">
+                        <label for="phone" style="display: block; margin-bottom: 8px; font-weight: 500; color: var(--color-text);">Phone/WhatsApp *</label>
+                        <input type="tel" id="phone" name="phone" required 
+                            placeholder="+233 XX XXX XXXX"
+                            style="width: 100%; padding: 12px; border: 1px solid var(--color-border); border-radius: var(--radius); font-family: 'Inter', sans-serif; font-size: 1rem;">
+                    </div>
+                    
+                    <div style="margin-bottom: 20px;">
+                        <label for="business" style="display: block; margin-bottom: 8px; font-weight: 500; color: var(--color-text);">Business Name</label>
+                        <input type="text" id="business" name="business" 
+                            placeholder="Your company name"
+                            style="width: 100%; padding: 12px; border: 1px solid var(--color-border); border-radius: var(--radius); font-family: 'Inter', sans-serif; font-size: 1rem;">
+                    </div>
+                    
+                    <div style="margin-bottom: 20px;">
+                        <label for="industry" style="display: block; margin-bottom: 8px; font-weight: 500; color: var(--color-text);">Industry *</label>
+                        <select id="industry" name="industry" required 
+                            style="width: 100%; padding: 12px; border: 1px solid var(--color-border); border-radius: var(--radius); font-family: 'Inter', sans-serif; font-size: 1rem;">
+                            <option value="">Select your industry</option>
+                            <option value="real-estate">🏠 Real Estate</option>
+                            <option value="import-export">📦 Import/Export</option>
+                            <option value="professional-services">💼 Professional Services</option>
+                            <option value="ecommerce">🛒 E-commerce</option>
+                            <option value="consulting">📊 Consulting</option>
+                            <option value="hospitality">🏨 Hospitality</option>
+                            <option value="education">🎓 Education</option>
+                            <option value="manufacturing">🏭 Manufacturing</option>
+                            <option value="retail">🛍️ Retail</option>
+                            <option value="agriculture">🌾 Agriculture</option>
+                            <option value="logistics">🚚 Logistics</option>
+                            <option value="healthcare">🏥 Healthcare</option>
+                            <option value="construction">🏗️ Construction</option>
+                            <option value="other">🔧 Other</option>
+                        </select>
+                    </div>
+                    
+                    <!-- PAIN POINT CAPTURE SECTION -->
+                    <div style="background: linear-gradient(135deg, rgba(102, 126, 234, 0.05), rgba(118, 75, 162, 0.05)); padding: 25px; border-radius: var(--radius); margin: 30px 0; border-left: 4px solid var(--color-primary);">
+                        <h4 style="color: var(--color-primary); margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
+                            <i class="fas fa-exclamation-triangle"></i> Tell Us About Your Biggest Challenges
+                        </h4>
+                        
+                        <!-- Biggest Daily Frustration -->
+                        <div style="margin-bottom: 20px;">
+                            <label for="biggestPain" style="display: block; margin-bottom: 8px; font-weight: 500; color: var(--color-text);">
+                                What's your BIGGEST daily frustration with current systems? *
+                            </label>
+                            <select id="biggestPain" name="biggestPain" required 
+                                style="width: 100%; padding: 12px; border: 1px solid var(--color-border); border-radius: var(--radius); font-family: 'Inter', sans-serif; font-size: 1rem;">
+                                <option value="">Select your top frustration</option>
+                                <option value="lost-leads">❌ Losing leads/customers in WhatsApp</option>
+                                <option value="manual-data-entry">⏰ Too much manual data entry</option>
+                                <option value="no-tracking">📊 Can't track what's working</option>
+                                <option value="slow-response">🐌 Slow response to customers</option>
+                                <option value="payment-chaos">💰 Payment collection chaos</option>
+                                <option value="team-communication">📱 Team communication breakdowns</option>
+                                <option value="inventory-management">📦 Inventory/stock management issues</option>
+                                <option value="unprofessional-image">👔 Looking unprofessional to customers</option>
+                                <option value="scaling-fears">🚫 Can't scale with current systems</option>
+                                <option value="everything-manual">😫 Everything is manual - no automation</option>
+                            </select>
+                        </div>
+                        
+                        <!-- Weekly Hours Wasted -->
+                        <div style="margin-bottom: 20px;">
+                            <label for="weeklyHours" style="display: block; margin-bottom: 8px; font-weight: 500; color: var(--color-text);">
+                                How many hours weekly do you waste on manual admin work? *
+                            </label>
+                            <select id="weeklyHours" name="weeklyHours" required 
+                                style="width: 100%; padding: 12px; border: 1px solid var(--color-border); border-radius: var(--radius); font-family: 'Inter', sans-serif; font-size: 1rem;">
+                                <option value="">Select hours wasted</option>
+                                <option value="5-10">5-10 hours (Half a day!)</option>
+                                <option value="10-15">10-15 hours (1-2 days!)</option>
+                                <option value="15-20">15-20 hours (2-3 days!)</option>
+                                <option value="20-25">20-25 hours (Half a week!)</option>
+                                <option value="25-30">25-30 hours (Most of the week!)</option>
+                                <option value="30+">30+ hours (My entire week!)</option>
+                            </select>
+                            <small style="color: var(--color-text-light); font-size: 0.85rem; display: block; margin-top: 5px;">
+                                ⏱️ This helps us calculate your time ROI
+                            </small>
+                        </div>
+                        
+                        <!-- Revenue Impact -->
+                        <div style="margin-bottom: 20px;">
+                            <label for="revenueImpact" style="display: block; margin-bottom: 8px; font-weight: 500; color: var(--color-text);">
+                                How much do inefficiencies cost your business monthly? *
+                            </label>
+                            <select id="revenueImpact" name="revenueImpact" required 
+                                style="width: 100%; padding: 12px; border: 1px solid var(--color-border); border-radius: var(--radius); font-family: 'Inter', sans-serif; font-size: 1rem;">
+                                <option value="">Select estimated monthly cost</option>
+                                <option value="under-ghc1000">Under GH₵1,000</option>
+                                <option value="ghc1000-3000">GH₵1,000 - 3,000</option>
+                                <option value="ghc3000-5000">GH₵3,000 - 5,000</option>
+                                <option value="ghc5000-10000">GH₵5,000 - 10,000</option>
+                                <option value="ghc10000-20000">GH₵10,000 - 20,000</option>
+                                <option value="ghc20000+">GH₵20,000+</option>
+                                <option value="dont-know">🤷 I don't know (that's part of the problem)</option>
+                            </select>
+                            <small style="color: var(--color-text-light); font-size: 0.85rem; display: block; margin-top: 5px;">
+                                💰 This helps us calculate your financial ROI
+                            </small>
+                        </div>
+                    </div>
+                    
+                    <!-- Additional Message -->
+                    <div style="margin-bottom: 20px;">
+                        <label for="message" style="display: block; margin-bottom: 8px; font-weight: 500; color: var(--color-text);">
+                            Tell us more about your business and what you're looking to achieve *
+                        </label>
+                        <textarea id="message" name="message" required rows="4" 
+                            placeholder="Example: 'We're a real estate company losing property inquiries in WhatsApp. Need a system to track leads, manage properties, and collect rent automatically...'"
+                            style="width: 100%; padding: 12px; border: 1px solid var(--color-border); border-radius: var(--radius); font-family: 'Inter', sans-serif; font-size: 1rem; resize: vertical;"></textarea>
+                        <small style="color: var(--color-text-light); font-size: 0.85rem; display: block; margin-top: 5px;">
+                            ✨ Be specific - our AI will analyze this for personalized recommendations
+                        </small>
+                    </div>
+                    
+                    <!-- How They Found Us -->
+                    <div style="margin-bottom: 20px;">
+                        <label for="source" style="display: block; margin-bottom: 8px; font-weight: 500; color: var(--color-text);">
+                            How did you hear about us?
+                        </label>
+                        <select id="source" name="source" 
+                            style="width: 100%; padding: 12px; border: 1px solid var(--color-border); border-radius: var(--radius); font-family: 'Inter', sans-serif; font-size: 1rem;">
+                            <option value="">Select one</option>
+                            <option value="google">Google Search</option>
+                            <option value="linkedin">LinkedIn</option>
+                            <option value="facebook">Facebook/Instagram</option>
+                            <option value="whatsapp">WhatsApp Forward</option>
+                            <option value="referral">Referral</option>
+                            <option value="event">Business Event</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <!-- Consent -->
+                    <div style="margin-bottom: 25px;">
+                        <label style="display: flex; align-items: flex-start; gap: 10px; cursor: pointer;">
+                            <input type="checkbox" id="consent" name="consent" required 
+                                style="margin-top: 4px;">
+                            <span style="font-size: 0.9rem; color: var(--color-text-light);">
+                                I understand this is a free consultation with no obligation. I consent to receive automated analysis and follow-up communication from Time-Back Automations.
+                            </span>
+                        </label>
+                    </div>
+                    
+                    <!-- Submit Button -->
+                    <button type="submit" class="btn" style="width: 100%; padding: 16px; font-size: 1.1rem; background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));">
+                        <i class="fas fa-robot"></i> Get AI-Powered Audit Analysis →
+                    </button>
+                    
+                    <!-- Success Message -->
+                    <p id="formMessage" style="margin-top: 20px; text-align: center; display: none; padding: 15px; border-radius: var(--radius);"></p>
+                    
+                    <!-- Privacy Note -->
+                    <p style="margin-top: 20px; text-align: center; color: var(--color-text-light); font-size: 0.8rem;">
+                        <i class="fas fa-shield-alt"></i> Your information is secure. We don't spam or share your data.
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof Section -->
+    <section class="social-proof">
+        <div class="container">
+            <div class="section-header">
+                <h2>Built for Businesses Like Yours</h2>
+                <p>Currently working with businesses in: Import/Export, Real Estate, Professional Services, E-commerce, Consulting</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta">
+        <div class="container">
+            <h2>Ready to Build Your Digital Foundation?</h2>
+            <p>Book a free 30-minute Digital Health Audit.</p>
+            <p>We'll review your current setup and show you exactly what you need to compete online.</p>
+            <p>No obligation. No pressure. Just honest advice from someone who understands African business.</p>
+            
+            <a href="https://cal.com/timebackautomations" class="btn" style="background: white; color: var(--color-primary); margin-top: 30px;">Book Your Free Audit →</a>
+            
+            <p style="margin-top: 20px; opacity: 0.9;">
+                <small>Not ready yet? <a href="#home" style="color: white; text-decoration: underline;">Download our free guide: '10 Signs Your Business Needs Digital Systems'</a></small>
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-logo">
+                        TIME-BACK<span>AUTOMATIONS</span>
+                    </div>
+                    <p style="color: rgba(255,255,255,0.8);">Digital Foundations for African Businesses</p>
+                    <p style="color: rgba(255,255,255,0.8); margin-top: 10px;">Accra, Ghana 🇬🇭</p>
+                    
+                    <div class="social-links">
+                        <a href="https://facebook.com/profile.php?id=61586824116948" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/time-back-automations/" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://instagram.com/time_back_automations" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/233530453400" target="_blank" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 style="color: white; margin-bottom: 20px;">Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#solution">Website Development</a></li>
+                        <li><a href="#solution">WhatsApp Business Integration</a></li>
+                        <li><a href="#solution">Lead Management Systems</a></li>
+                        <li><a href="#home">Digital Transformation Consulting</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 style="color: white; margin-bottom: 20px;">Contact</h3>
+                    <ul class="footer-links">
+                        <li><a href="mailto:timebackautomation26@gmail.com">timebackautomation26@gmail.com</a></li>
+                        <li><a href="https://wa.me/233530453400">WhatsApp: +233 530 453 400</a></li>
+                        <li><a href="https://www.linkedin.com/in/time-back-automations/">LinkedIn Profile</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 style="color: white; margin-bottom: 20px;">Legal</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Privacy Policy (Coming Soon)</a></li>
+                        <li><a href="#home">Terms of Service (Coming Soon)</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>© 2026 Time-Back Automations. Built with automation (obviously) 🤖</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cal.com Booking Modal -->
+    <div id="bookingModal" style="display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.9); z-index: 2000; justify-content: center; align-items: center; padding: 20px;">
+        <div style="background: white; border-radius: var(--radius); padding: 30px; max-width: 800px; width: 100%; max-height: 90vh; overflow-y: auto; position: relative;">
+            <button id="closeModal" style="position: absolute; top: 15px; right: 15px; background: none; border: none; font-size: 1.5rem; cursor: pointer; color: var(--color-text-light);">×</button>
+            
+            <h2 style="margin-bottom: 20px;">Book Your Free Digital Health Audit</h2>
+            
+            <!-- Cal.com Embed -->
+            <div style="min-height: 600px;">
+                <iframe 
+                    src="https://cal.com/timebackautomations" 
+                    style="width: 100%; height: 600px; border: none; border-radius: var(--radius);"
+                    title="Booking Calendar"
+                    loading="lazy"
+                ></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/233530453400?text=Hi%2C%20I'm%20interested%20in%20the%20Digital%20Foundation%20Package" 
+       class="whatsapp-float" 
+       target="_blank"
+       aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTopBtn" class="scroll-top-btn" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookieConsent" style="display: none; position: fixed; bottom: 0; left: 0; right: 0; background: var(--color-dark); color: white; padding: 20px; z-index: 9999; box-shadow: 0 -4px 12px rgba(0,0,0,0.2);">
+        <div class="container" style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 20px;">
+            <p style="margin: 0; color: rgba(255,255,255,0.9); flex: 1; min-width: 250px;">
+                We use cookies to improve your experience and analyze site traffic. By continuing to use this site, you accept our use of cookies.
+            </p>
+            <div style="display: flex; gap: 15px;">
+                <button id="acceptCookies" class="btn" style="background: var(--color-success); padding: 10px 24px;">
+                    Accept
+                </button>
+                <button id="declineCookies" class="btn-outline" style="padding: 10px 24px; color: white; border-color: white;">
+                    Decline
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- External Resources -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Page Loader
+            const pageLoader = document.getElementById('pageLoader');
+            setTimeout(() => {
+                pageLoader.classList.add('hidden');
+            }, 500);
+
+            // Mobile Menu Toggle
+            const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+            const navLinks = document.getElementById('navLinks');
+            
+            if (mobileMenuBtn && navLinks) {
+                mobileMenuBtn.addEventListener('click', () => {
+                    navLinks.classList.toggle('active');
+                });
+                
+                // Close mobile menu when clicking on a link
+                navLinks.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        navLinks.classList.remove('active');
+                    });
+                });
+            }
+
+            // Scroll to Top Button
+            const scrollTopBtn = document.getElementById('scrollTopBtn');
+            
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) {
+                    scrollTopBtn.classList.add('visible');
+                } else {
+                    scrollTopBtn.classList.remove('visible');
+                }
+            });
+            
+            if (scrollTopBtn) {
+                scrollTopBtn.addEventListener('click', () => {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                });
+            }
+
+            // Cookie Consent
+            const cookieConsent = document.getElementById('cookieConsent');
+            const acceptCookies = document.getElementById('acceptCookies');
+            const declineCookies = document.getElementById('declineCookies');
+            
+            if (!localStorage.getItem('cookiesAccepted')) {
+                setTimeout(() => {
+                    if (cookieConsent) cookieConsent.style.display = 'block';
+                }, 2000);
+            }
+            
+            if (acceptCookies) {
+                acceptCookies.addEventListener('click', () => {
+                    localStorage.setItem('cookiesAccepted', 'true');
+                    if (cookieConsent) cookieConsent.style.display = 'none';
+                });
+            }
+            
+            if (declineCookies) {
+                declineCookies.addEventListener('click', () => {
+                    localStorage.setItem('cookiesAccepted', 'false');
+                    if (cookieConsent) cookieConsent.style.display = 'none';
+                });
+            }
+
+            // AI Modal
+            const aiModal = document.getElementById('aiModal');
+            const aiCloseBtn = document.getElementById('aiCloseBtn');
+            const aiModalBody = document.getElementById('aiModalBody');
+            
+            if (aiCloseBtn) {
+                aiCloseBtn.addEventListener('click', () => {
+                    aiModal.classList.remove('active');
+                });
+            }
+            
+            // Close modal when clicking outside
+            aiModal.addEventListener('click', (e) => {
+                if (e.target === aiModal) {
+                    aiModal.classList.remove('active');
+                }
+            });
+
+            // Form Submission with AI Analysis
+            const auditForm = document.getElementById('auditForm');
+            const formMessage = document.getElementById('formMessage');
+            
+            if (auditForm) {
+                auditForm.addEventListener('submit', async function(e) {
+                    e.preventDefault();
+                    
+                    const submitBtn = this.querySelector('button[type="submit"]');
+                    const originalText = submitBtn.innerHTML;
+                    
+                    // Show loading
+                    submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Analyzing with AI...';
+                    submitBtn.disabled = true;
+                    formMessage.style.display = 'none';
+                    
+                    // Get form data
+                    const leadData = {
+                        name: document.getElementById('name').value.trim(),
+                        email: document.getElementById('email').value.trim(),
+                        phone: document.getElementById('phone').value.trim(),
+                        business: document.getElementById('business').value.trim(),
+                        industry: document.getElementById('industry').value,
+                        biggestPain: document.getElementById('biggestPain').value,
+                        weeklyHours: document.getElementById('weeklyHours').value,
+                        revenueImpact: document.getElementById('revenueImpact').value,
+                        message: document.getElementById('message').value.trim(),
+                        source: document.getElementById('source').value || 'website',
+                        timestamp: new Date().toISOString(),
+                        page_url: window.location.href
+                    };
+                    
+                    // Validate
+                    if (!validateLeadData(leadData)) {
+                        showFormMessage('Please fill in all required fields correctly.', 'error');
+                        submitBtn.innerHTML = originalText;
+                        submitBtn.disabled = false;
+                        return;
+                    }
+                    
+                    try {
+                        // Generate AI Analysis
+                        const aiAnalysis = generateAIAnalysis(leadData);
+                        
+                        // Show AI Modal with analysis
+                        showAIAnalysis(leadData, aiAnalysis);
+                        
+                        // Send data to webhook (in background)
+                        sendToWebhook(leadData, aiAnalysis);
+                        
+                        // Track conversion
+                        trackLeadConversion(leadData);
+                        
+                        // Show success message
+                        showFormMessage(`
+                            <div style="text-align: center; color: #38a169;">
+                                <div style="font-size: 3rem;">✅</div>
+                                <h3>Analysis Complete!</h3>
+                                <p>Check the AI analysis above for personalized recommendations.</p>
+                                
+                                <div style="margin: 20px 0;">
+                                    <a href="https://wa.me/233530453400?text=Hi, just got AI analysis. Name: ${encodeURIComponent(leadData.name)}" 
+                                       class="btn" 
+                                       style="background: #25D366;">
+                                       💬 Discuss with Expert
+                                    </a>
+                                </div>
+                            </div>
+                        `, 'success');
+                        
+                        // Reset form
+                        auditForm.reset();
+                        
+                    } catch (error) {
+                        console.error('Form error:', error);
+                        showFormMessage(`
+                            <div style="text-align: center; color: #c53030;">
+                                <div style="font-size: 3rem;">⚠️</div>
+                                <h3>System Error</h3>
+                                <p>Please try again or contact us directly.</p>
+                                
+                                <div style="margin: 20px 0;">
+                                    <a href="mailto:timebackautomation26@gmail.com?subject=Form Submission Failed&body=Name: ${encodeURIComponent(leadData.name)}%0AEmail: ${encodeURIComponent(leadData.email)}%0APhone: ${encodeURIComponent(leadData.phone)}" 
+                                       class="btn" 
+                                       style="background: #ed8936;">
+                                       <i class="fas fa-envelope"></i> Email Us
+                                    </a>
+                                </div>
+                            </div>
+                        `, 'error');
+                        
+                        // Save to localStorage as backup
+                        backupLeadLocally(leadData);
+                        
+                    } finally {
+                        submitBtn.innerHTML = originalText;
+                        submitBtn.disabled = false;
+                    }
+                });
+            }
+            
+            // AI Analysis Generation Function
+            function generateAIAnalysis(leadData) {
+                // Industry-specific insights
+                const industryInsights = {
+                    'real-estate': {
+                        commonIssues: ['Lead leakage in WhatsApp', 'Property listing management', 'Rent collection delays', 'Tenant communication'],
+                        solutions: ['Property portal website', 'Automated lead assignment', 'Mobile Money payment integration', 'Tenant portal'],
+                        roi: '30-50% increase in property sales'
+                    },
+                    'import-export': {
+                        commonIssues: ['Order tracking chaos', 'Document management', 'Supplier communication', 'Inventory mismatches'],
+                        solutions: ['Order tracking dashboard', 'Document automation', 'Supplier portal', 'Real-time inventory'],
+                        roi: '40-60% reduction in shipping delays'
+                    },
+                    'professional-services': {
+                        commonIssues: ['Client onboarding delays', 'Project management', 'Invoice tracking', 'Time management'],
+                        solutions: ['Client portal', 'Project automation', 'Automated invoicing', 'Time tracking system'],
+                        roi: '20-40% increase in billable hours'
+                    },
+                    'ecommerce': {
+                        commonIssues: ['Abandoned carts', 'Order fulfillment', 'Customer service', 'Inventory sync'],
+                        solutions: ['Cart recovery automation', 'Order processing system', 'Chatbot integration', 'Inventory API'],
+                        roi: '25-45% increase in conversions'
+                    },
+                    'default': {
+                        commonIssues: ['Manual data entry', 'Poor customer follow-up', 'Lost communication', 'Inefficient processes'],
+                        solutions: ['Custom automation system', 'CRM integration', 'Communication hub', 'Process optimization'],
+                        roi: '35-55% time savings'
+                    }
+                };
+                
+                // Get industry-specific data or use default
+                const industryData = industryInsights[leadData.industry] || industryInsights.default;
+                
+                // Calculate ROI based on weekly hours
+                const hoursMapping = {
+                    '5-10': { hours: 7.5, annualSavings: 390 },
+                    '10-15': { hours: 12.5, annualSavings: 650 },
+                    '15-20': { hours: 17.5, annualSavings: 910 },
+                    '20-25': { hours: 22.5, annualSavings: 1170 },
+                    '25-30': { hours: 27.5, annualSavings: 1430 },
+                    '30+': { hours: 35, annualSavings: 1820 }
+                };
+                
+                const hourData = hoursMapping[leadData.weeklyHours] || { hours: 10, annualSavings: 520 };
+                
+                // Calculate financial impact
+                const revenueMapping = {
+                    'under-ghc1000': 750,
+                    'ghc1000-3000': 2000,
+                    'ghc3000-5000': 4000,
+                    'ghc5000-10000': 7500,
+                    'ghc10000-20000': 15000,
+                    'ghc20000+': 25000,
+                    'dont-know': 5000
+                };
+                
+                const monthlyLoss = revenueMapping[leadData.revenueImpact] || 3000;
+                
+                // Generate analysis
+                return {
+                    industryAnalysis: industryData,
+                    timeROI: {
+                        weeklyHoursSaved: hourData.hours,
+                        annualHoursSaved: hourData.annualSavings,
+                        equivalentFullTime: (hourData.hours / 40).toFixed(1)
+                    },
+                    financialROI: {
+                        monthlySavings: monthlyLoss * 0.6, // Assume 60% recovery
+                        annualSavings: monthlyLoss * 0.6 * 12,
+                        investmentRecovery: Math.ceil((12000) / (monthlyLoss * 0.6)) // Months to recover investment
+                    },
+                    painPointSolutions: getPainPointSolutions(leadData.biggestPain),
+                    urgencyLevel: calculateUrgency(leadData),
+                    recommendedPackage: getRecommendedPackage(leadData)
+                };
+            }
+            
+            function getPainPointSolutions(painPoint) {
+                const solutions = {
+                    'lost-leads': {
+                        title: 'Lead Management System',
+                        features: ['Automated lead capture', 'Follow-up reminders', 'Lead scoring', 'WhatsApp integration'],
+                        impact: 'Reduce lead loss by 80%'
+                    },
+                    'manual-data-entry': {
+                        title: 'Data Automation Suite',
+                        features: ['Form automation', 'Data sync', 'API integrations', 'Report generation'],
+                        impact: 'Save 15+ hours weekly'
+                    },
+                    'no-tracking': {
+                        title: 'Analytics Dashboard',
+                        features: ['Real-time metrics', 'Conversion tracking', 'Customer insights', 'Performance reports'],
+                        impact: 'Make data-driven decisions'
+                    },
+                    'slow-response': {
+                        title: 'Customer Response System',
+                        features: ['Auto-responders', 'Chatbots', 'Quick reply templates', 'Team inbox'],
+                        impact: 'Reduce response time by 90%'
+                    },
+                    'payment-chaos': {
+                        title: 'Payment Automation',
+                        features: ['Mobile Money integration', 'Automated invoices', 'Payment tracking', 'Receipt generation'],
+                        impact: 'Get paid 3x faster'
+                    },
+                    'default': {
+                        title: 'Custom Automation Solution',
+                        features: ['Process analysis', 'Custom workflows', 'Team training', 'Ongoing support'],
+                        impact: 'Transform your operations'
+                    }
+                };
+                
+                return solutions[painPoint] || solutions.default;
+            }
+            
+            function calculateUrgency(leadData) {
+                let score = 0;
+                
+                // Weekly hours scoring
+                const hourScores = {
+                    '5-10': 1,
+                    '10-15': 2,
+                    '15-20': 3,
+                    '20-25': 4,
+                    '25-30': 5,
+                    '30+': 6
+                };
+                
+                score += hourScores[leadData.weeklyHours] || 0;
+                
+                // Revenue impact scoring
+                const revenueScores = {
+                    'under-ghc1000': 1,
+                    'ghc1000-3000': 2,
+                    'ghc3000-5000': 3,
+                    'ghc5000-10000': 4,
+                    'ghc10000-20000': 5,
+                    'ghc20000+': 6,
+                    'dont-know': 3
+                };
+                
+                score += revenueScores[leadData.revenueImpact] || 0;
+                
+                // Message length (complexity)
+                if (leadData.message.length > 200) score += 2;
+                if (leadData.message.includes('urgent') || leadData.message.includes('critical')) score += 3;
+                
+                return score >= 8 ? 'high' : score >= 5 ? 'medium' : 'low';
+            }
+            
+            function getRecommendedPackage(leadData) {
+                const urgency = calculateUrgency(leadData);
+                
+                if (urgency === 'high') {
+                    return {
+                        name: 'Complete Digital Transformation',
+                        price: 'GH₵20,000',
+                        timeline: '2 weeks',
+                        features: ['Everything in Digital Foundation', 'Advanced automation', 'Custom integrations', 'Priority support']
+                    };
+                } else if (urgency === 'medium') {
+                    return {
+                        name: 'Digital Foundation Package',
+                        price: 'GH₵12,000 - GH₵15,000',
+                        timeline: '2 weeks',
+                        features: ['Professional website', 'WhatsApp Business', 'Lead capture', 'Basic training']
+                    };
+                } else {
+                    return {
+                        name: 'Starter Package',
+                        price: 'GH₵7,500',
+                        timeline: '1 week',
+                        features: ['Essential website', 'Basic automation', 'Lead forms', 'Documentation']
+                    };
+                }
+            }
+            
+            function showAIAnalysis(leadData, analysis) {
+                // Clear previous content
+                aiModalBody.innerHTML = '';
+                
+                // Add typing indicator
+                const typingHtml = `
+                    <div class="ai-typing">
+                        <div class="ai-typing-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <span>AI is analyzing your business data...</span>
+                    </div>
+                `;
+                aiModalBody.innerHTML = typingHtml;
+                
+                // Show modal
+                aiModal.classList.add('active');
+                
+                // Simulate AI typing delay
+                setTimeout(() => {
+                    // Generate full analysis HTML
+                    const analysisHtml = `
+                        <div style="margin-bottom: 30px;">
+                            <h3 style="color: var(--color-primary); margin-bottom: 15px;">
+                                <i class="fas fa-chart-line"></i> AI Analysis for ${leadData.name}
+                            </h3>
+                            <p><strong>Business:</strong> ${leadData.business || 'Not specified'}</p>
+                            <p><strong>Industry:</strong> ${document.getElementById('industry').selectedOptions[0].text}</p>
+                            <p><strong>Urgency Level:</strong> 
+                                <span style="background: ${analysis.urgencyLevel === 'high' ? '#F56565' : analysis.urgencyLevel === 'medium' ? '#ED8936' : '#48BB78'}; 
+                                         color: white; padding: 3px 10px; border-radius: 20px; font-size: 0.8rem;">
+                                    ${analysis.urgencyLevel.toUpperCase()}
+                                </span>
+                            </p>
+                        </div>
+                        
+                        <div class="ai-analysis-section">
+                            <h4><i class="fas fa-exclamation-circle"></i> Your Main Challenge</h4>
+                            <p>${document.getElementById('biggestPain').selectedOptions[0].text}</p>
+                            
+                            <div class="ai-recommendation">
+                                <h5><i class="fas fa-lightbulb"></i> Recommended Solution</h5>
+                                <p><strong>${analysis.painPointSolutions.title}</strong></p>
+                                <ul style="margin: 10px 0 10px 20px;">
+                                    ${analysis.painPointSolutions.features.map(feature => `<li>${feature}</li>`).join('')}
+                                </ul>
+                                <p><strong>Expected Impact:</strong> ${analysis.painPointSolutions.impact}</p>
+                            </div>
+                        </div>
+                        
+                        <div class="ai-analysis-section">
+                            <h4><i class="fas fa-clock"></i> Time Savings Analysis</h4>
+                            <p>Currently wasting: <strong>${analysis.timeROI.weeklyHoursSaved} hours/week</strong></p>
+                            <p>Annual time waste: <strong>${analysis.timeROI.annualHoursSaved} hours/year</strong></p>
+                            <p>Equivalent to: <strong>${analysis.timeROI.equivalentFullTime} full-time employee(s)</strong></p>
+                            
+                            <div class="ai-roi-calculator">
+                                <h5><i class="fas fa-calculator"></i> ROI Calculation</h5>
+                                <p>With automation, you could save: <strong>${analysis.timeROI.weeklyHoursSaved * 0.7} hours/week</strong></p>
+                                <p>Annual time savings value: <strong>GH₵${(analysis.timeROI.annualHoursSaved * 20).toLocaleString()}</strong> (at GH₵20/hour)</p>
+                            </div>
+                        </div>
+                        
+                        <div class="ai-analysis-section">
+                            <h4><i class="fas fa-money-bill-wave"></i> Financial Impact</h4>
+                            <p>Monthly inefficiency cost: <strong>GH₵${analysis.financialROI.monthlySavings.toLocaleString()}+</strong></p>
+                            <p>Annual recovery potential: <strong>GH₵${analysis.financialROI.annualSavings.toLocaleString()}</strong></p>
+                            <p>Investment recovery: <strong>${analysis.financialROI.investmentRecovery} months</strong></p>
+                        </div>
+                        
+                        <div class="ai-analysis-section">
+                            <h4><i class="fas fa-rocket"></i> Recommended Package</h4>
+                            <div style="background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1)); padding: 20px; border-radius: var(--radius); margin: 15px 0;">
+                                <h5 style="color: var(--color-primary); margin-bottom: 10px;">${analysis.recommendedPackage.name}</h5>
+                                <p><strong>Investment:</strong> ${analysis.recommendedPackage.price}</p>
+                                <p><strong>Timeline:</strong> ${analysis.recommendedPackage.timeline}</p>
+                                <ul style="margin: 10px 0 10px 20px;">
+                                    ${analysis.recommendedPackage.features.map(feature => `<li>${feature}</li>`).join('')}
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="ai-next-steps">
+                            <h5><i class="fas fa-forward"></i> Recommended Next Steps</h5>
+                            <ol style="margin: 10px 0 10px 20px;">
+                                <li><strong>Schedule a call</strong> with our automation specialist</li>
+                                <li><strong>Get custom proposal</strong> based on this analysis</li>
+                                <li><strong>Start automation</strong> in as little as 2 weeks</li>
+                                <li><strong>Track results</strong> with our performance dashboard</li>
+                            </ol>
+                            <div style="display: flex; gap: 15px; margin-top: 20px; flex-wrap: wrap;">
+                                <a href="https://cal.com/timebackautomations" class="btn" style="flex: 1; min-width: 200px;">
+                                    <i class="fas fa-calendar"></i> Book Strategy Call
+                                </a>
+                                <a href="https://wa.me/233530453400?text=Hi, I just got AI analysis and want to discuss: ${encodeURIComponent(leadData.business || 'my business')}" 
+                                   class="btn" 
+                                   style="background: #25D366; flex: 1; min-width: 200px;">
+                                   <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div style="margin-top: 30px; padding: 15px; background: var(--color-light); border-radius: var(--radius); font-size: 0.9rem;">
+                            <p><i class="fas fa-info-circle"></i> <strong>Note:</strong> This is an AI-generated preliminary analysis. Our team will provide a detailed custom proposal after discussing your specific needs.</p>
+                        </div>
+                    `;
+                    
+                    // Replace typing indicator with full analysis
+                    aiModalBody.innerHTML = analysisHtml;
+                    
+                    // Scroll to top of modal
+                    aiModalBody.scrollTop = 0;
+                    
+                }, 1500); // 1.5 second typing simulation
+            }
+            
+            async function sendToWebhook(leadData, aiAnalysis) {
+                // Replace with your actual webhook URL
+                const WEBHOOK_URL = 'https://hook.us2.make.com/llmfjpxgsrmqsqotnrqs6gs9bghw5h11';
+                
+                if (!WEBHOOK_URL.includes('YOUR_MAKE_COM')) {
+                    try {
+                        const payload = {
+                            ...leadData,
+                            ai_analysis: aiAnalysis,
+                            urgency_level: calculateUrgency(leadData),
+                            timestamp: new Date().toISOString()
+                        };
+                        
+                        const response = await fetch(WEBHOOK_URL, {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json',
+                            },
+                            body: JSON.stringify(payload)
+                        });
+                        
+                        if (!response.ok) {
+                            console.warn('Webhook submission failed:', response.status);
+                        }
+                        
+                    } catch (error) {
+                        console.error('Webhook error:', error);
+                        // Silently fail - user already has AI analysis
+                    }
+                }
+            }
+            
+            // Helper functions
+            function validateLeadData(data) {
+                if (!data.name || data.name.length < 2) return false;
+                if (!data.email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email)) return false;
+                if (!data.phone || data.phone.length < 10) return false;
+                if (!data.industry) return false;
+                if (!data.biggestPain) return false;
+                if (!data.weeklyHours) return false;
+                if (!data.revenueImpact) return false;
+                if (!data.message || data.message.length < 10) return false;
+                return true;
+            }
+            
+            function trackLeadConversion(data) {
+                // Google Analytics
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'generate_lead', {
+                        'currency': 'GHS',
+                        'value': 50,
+                        'lead_type': 'ai_analysis',
+                        'industry': data.industry
+                    });
+                }
+                
+                // Facebook Pixel
+                if (typeof fbq !== 'undefined') {
+                    fbq('track', 'Lead', {
+                        content_name: 'AI Digital Health Audit',
+                        content_category: 'Form Submission',
+                        value: 50,
+                        currency: 'GHS'
+                    });
+                }
+            }
+            
+            function backupLeadLocally(data) {
+                try {
+                    const leads = JSON.parse(localStorage.getItem('timeback_leads') || '[]');
+                    leads.push({
+                        ...data,
+                        backup_time: new Date().toISOString()
+                    });
+                    localStorage.setItem('timeback_leads', JSON.stringify(leads.slice(-50)));
+                } catch (e) {
+                    console.warn('Local backup failed:', e);
+                }
+            }
+            
+            function showFormMessage(message, type = 'success') {
+                if (formMessage) {
+                    formMessage.innerHTML = message;
+                    formMessage.style.display = 'block';
+                    formMessage.style.color = type === 'error' ? '#c53030' : '#38a169';
+                    
+                    // Scroll to message
+                    formMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                }
+            }
+        });
+    </script>
+</body>
+</html>
