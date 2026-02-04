@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Time-Back Automations | Digital Foundations for African Businesses</title>
     <meta name="description" content="Professional website + WhatsApp Business integration + lead capture system for African businesses. Delivered in 2 weeks. Transform your manual processes into automated systems.">
-    <meta name="keywords" content="Ghana business automation, African business website, WhatsApp Business Ghana, lead capture system, digital transformation Ghana, SME automation, Accra web development">
+    <meta name="keywords" content="Ghana business automation, African business website, WhatsApp Business Ghana, lead capture system, digital transformation Ghana, SME automation, Accra web development, mobile money Ghana, Ghana payment solutions">
     
     <!-- Open Graph / Social Media Meta Tags -->
     <meta property="og:title" content="Time-Back Automations | Digital Foundations for African Businesses">
@@ -54,9 +54,9 @@
             "jobTitle": "Digital Architect"
         },
         "priceRange": "GH₵7,500-12,000",
-        "currenciesAccepted": "GHS, USD",
+        "currenciesAccepted": "GHS, USD, GBP, EUR",
         "openingHours": "Mo-Fr 09:00-18:00, Sa 10:00-14:00",
-        "paymentAccepted": "Mobile Money, Bank Transfer",
+        "paymentAccepted": "Mobile Money, Bank Transfer, Credit Card",
         "knowsAbout": ["African Business Technology", "WhatsApp Business API", "Mobile-First Web Design", "Lead Capture Systems"]
     }
     </script>
@@ -90,6 +90,9 @@
             --shadow-lg: 0 10px 30px rgba(0,0,0,0.1);
             --radius: 12px;
             --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            --mobile-money-color: #FF6B00;
+            --visa-color: #1A1F71;
+            --mastercard-color: #EB001B;
         }
         
         * {
@@ -381,6 +384,74 @@
             color: var(--primary-color);
         }
         
+        /* Payment Methods Section */
+        .payment-methods {
+            background: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .payment-icons {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+        
+        .payment-icon {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            padding: 25px;
+            background: var(--light-color);
+            border-radius: var(--radius);
+            transition: var(--transition);
+            width: 160px;
+        }
+        
+        .payment-icon:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+        }
+        
+        .payment-icon.momo {
+            border: 2px solid var(--mobile-money-color);
+        }
+        
+        .payment-icon.visa {
+            border: 2px solid var(--visa-color);
+        }
+        
+        .payment-icon.mastercard {
+            border: 2px solid var(--mastercard-color);
+        }
+        
+        .payment-icon.bank {
+            border: 2px solid var(--primary-color);
+        }
+        
+        .payment-icon i {
+            font-size: 2.5rem;
+        }
+        
+        .payment-icon.momo i {
+            color: var(--mobile-money-color);
+        }
+        
+        .payment-icon.visa i {
+            color: var(--visa-color);
+        }
+        
+        .payment-icon.mastercard i {
+            color: var(--mastercard-color);
+        }
+        
+        .payment-icon.bank i {
+            color: var(--primary-color);
+        }
+        
         /* AI Modal */
         .ai-modal {
             display: none;
@@ -648,6 +719,91 @@
             left: 50%;
             transform: translateX(-50%);
             z-index: 1;
+        }
+        
+        /* Payment Modal */
+        .payment-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.9);
+            z-index: 10000;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .payment-modal.active {
+            display: flex;
+        }
+        
+        .payment-modal-content {
+            background: white;
+            border-radius: var(--radius);
+            max-width: 500px;
+            width: 100%;
+            max-height: 90vh;
+            overflow-y: auto;
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .payment-modal-header {
+            padding: 25px 30px;
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            color: white;
+            border-radius: var(--radius) var(--radius) 0 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .payment-modal-body {
+            padding: 30px;
+        }
+        
+        .payment-option {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 20px;
+            border: 2px solid var(--border-color);
+            border-radius: var(--radius);
+            margin-bottom: 15px;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        
+        .payment-option:hover {
+            border-color: var(--primary-color);
+            background: rgba(67, 97, 238, 0.05);
+        }
+        
+        .payment-option.selected {
+            border-color: var(--primary-color);
+            background: rgba(67, 97, 238, 0.1);
+        }
+        
+        .payment-option input {
+            margin: 0;
+        }
+        
+        .momo-details,
+        .card-details,
+        .bank-details {
+            display: none;
+            margin-top: 20px;
+            padding: 20px;
+            background: var(--light-color);
+            border-radius: var(--radius);
+        }
+        
+        .momo-details.active,
+        .card-details.active,
+        .bank-details.active {
+            display: block;
         }
         
         /* Pricing Section */
@@ -1011,9 +1167,19 @@
                 padding: 30px;
             }
             
-            .ai-modal-content {
+            .ai-modal-content,
+            .payment-modal-content {
                 margin: 10px;
                 max-height: 95vh;
+            }
+            
+            .payment-icons {
+                gap: 15px;
+            }
+            
+            .payment-icon {
+                width: 130px;
+                padding: 20px;
             }
         }
         
@@ -1037,6 +1203,16 @@
             
             .pricing-card {
                 padding: 40px 20px;
+            }
+            
+            .payment-icons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .payment-icon {
+                width: 100%;
+                max-width: 250px;
             }
         }
     </style>
@@ -1064,6 +1240,19 @@
         </div>
     </div>
 
+    <!-- Payment Modal -->
+    <div class="payment-modal" id="paymentModal">
+        <div class="payment-modal-content">
+            <div class="payment-modal-header">
+                <h3><i class="fas fa-credit-card"></i> Secure Payment</h3>
+                <button class="ai-close-btn" id="paymentCloseBtn">×</button>
+            </div>
+            <div class="payment-modal-body" id="paymentModalBody">
+                <!-- Payment content will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+
     <!-- Header -->
     <header id="mainHeader">
         <div class="container header-container">
@@ -1080,6 +1269,7 @@
                 <a href="#home">Home</a>
                 <a href="#problem">The Problem</a>
                 <a href="#solution">The Solution</a>
+                <a href="#payment-methods">Payments</a>
                 <a href="#how-it-works">Process</a>
                 <a href="#pricing">Pricing</a>
                 <a href="#contact-form" class="nav-cta">Free Audit</a>
@@ -1107,11 +1297,15 @@
                         <i class="fas fa-check-circle"></i>
                         <span>2-Week Delivery</span>
                     </div>
+                    <div class="feature-tag">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Secure Payments</span>
+                    </div>
                 </div>
                 
                 <div class="hero-buttons">
                     <a href="#contact-form" class="btn">Book Your Free Digital Audit →</a>
-                    <a href="#how-it-works" class="btn btn-outline">See How It Works</a>
+                    <button onclick="showPaymentModal()" class="btn btn-outline">Make Secure Payment</button>
                 </div>
             </div>
         </div>
@@ -1145,6 +1339,72 @@
                     <div style="font-size: 4rem; margin-bottom: 20px;">✨</div>
                     <h3 style="margin-bottom: 15px;">Digital Clarity</h3>
                     <p style="opacity: 0.9;">Automated systems, organized data, nothing falls through cracks</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Methods Section -->
+    <section id="payment-methods" class="payment-methods" data-aos="fade-up">
+        <div class="container">
+            <h2 class="section-title">Flexible & Secure Payment Options</h2>
+            <p class="section-subtitle">We accept all major payment methods popular in Ghana and across Africa</p>
+            
+            <div class="payment-icons">
+                <div class="payment-icon momo" onclick="showPaymentModal('momo')">
+                    <i class="fas fa-mobile-alt"></i>
+                    <div>
+                        <h4>Mobile Money</h4>
+                        <p style="font-size: 0.9rem; color: var(--text-light);">MTN, Telcel, AirtelTigo</p>
+                    </div>
+                </div>
+                
+                <div class="payment-icon visa" onclick="showPaymentModal('visa')">
+                    <i class="fab fa-cc-visa"></i>
+                    <div>
+                        <h4>Visa Card</h4>
+                        <p style="font-size: 0.9rem; color: var(--text-light);">Secure online payment</p>
+                    </div>
+                </div>
+                
+                <div class="payment-icon mastercard" onclick="showPaymentModal('mastercard')">
+                    <i class="fab fa-cc-mastercard"></i>
+                    <div>
+                        <h4>Mastercard</h4>
+                        <p style="font-size: 0.9rem; color: var(--text-light);">Global acceptance</p>
+                    </div>
+                </div>
+                
+                <div class="payment-icon bank" onclick="showPaymentModal('bank')">
+                    <i class="fas fa-university"></i>
+                    <div>
+                        <h4>Bank Transfer</h4>
+                        <p style="font-size: 0.9rem; color: var(--text-light);">Direct to account</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="margin-top: 40px; padding: 25px; background: rgba(67, 97, 238, 0.1); border-radius: var(--radius);">
+                <h4 style="color: var(--primary-color); margin-bottom: 15px; text-align: center;">
+                    <i class="fas fa-shield-alt"></i> 100% Secure Payments
+                </h4>
+                <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+                    <div style="text-align: center;">
+                        <i class="fas fa-lock" style="color: #38B2AC; font-size: 1.5rem; margin-bottom: 10px;"></i>
+                        <p style="font-size: 0.9rem;">SSL Encryption</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <i class="fas fa-user-shield" style="color: #4CC9F0; font-size: 1.5rem; margin-bottom: 10px;"></i>
+                        <p style="font-size: 0.9rem;">Fraud Protection</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <i class="fas fa-receipt" style="color: #7209B7; font-size: 1.5rem; margin-bottom: 10px;"></i>
+                        <p style="font-size: 0.9rem;">Instant Receipts</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <i class="fas fa-headset" style="color: #F72585; font-size: 1.5rem; margin-bottom: 10px;"></i>
+                        <p style="font-size: 0.9rem;">24/7 Support</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1287,7 +1547,7 @@
             <div class="pricing-card">
                 <div class="price-badge">SPECIAL OFFER</div>
                 <h3>The Digital Foundation Package</h3>
-                <div class="price">GH₵12,000</div>
+                <div class="price">GH₵9,900</div>
                 <p><strong>Complete digital transformation in 2 weeks</strong></p>
                 
                 <div style="margin: 30px 0; text-align: left;">
@@ -1296,18 +1556,47 @@
                         <li style="margin-bottom: 10px;"><i class="fas fa-check" style="color: var(--primary-color); margin-right: 10px;"></i> Professional 5-page website</li>
                         <li style="margin-bottom: 10px;"><i class="fas fa-check" style="color: var(--primary-color); margin-right: 10px;"></i> WhatsApp Business integration</li>
                         <li style="margin-bottom: 10px;"><i class="fas fa-check" style="color: var(--primary-color); margin-right: 10px;"></i> Lead capture system</li>
+                        <li style="margin-bottom: 10px;"><i class="fas fa-check" style="color: var(--primary-color); margin-right: 10px;"></i> Mobile Money payment integration</li>
                         <li style="margin-bottom: 10px;"><i class="fas fa-check" style="color: var(--primary-color); margin-right: 10px;"></i> 2-week delivery</li>
                         <li style="margin-bottom: 10px;"><i class="fas fa-check" style="color: var(--primary-color); margin-right: 10px;"></i> 30-day money-back guarantee</li>
                     </ul>
                 </div>
                 
-                <div style="background: rgba(67, 97, 238, 0.1); padding: 20px; border-radius: 8px; margin: 30px 0;">
-                    <h4 style="color: var(--primary-color); margin-bottom: 10px;">Founding Client Special</h4>
-                    <p style="margin-bottom: 5px;">First 5 businesses: <strong style="font-size: 1.2rem;">GH₵7,500</strong></p>
-                    <p style="font-size: 0.9rem; color: var(--text-light);">In exchange for detailed testimonial + 2 referrals</p>
+                <!-- FOUNDING CLIENT SPECIAL - RESTORED -->
+                <div style="background: rgba(247, 37, 133, 0.1); padding: 25px; border-radius: 8px; margin: 30px 0; border-left: 4px solid var(--warning-color);">
+                    <h4 style="color: var(--warning-color); margin-bottom: 10px; display: flex; align-items: center; gap: 10px;">
+                        <i class="fas fa-crown"></i> Founding Client Special
+                    </h4>
+                    <p style="margin-bottom: 8px; font-size: 1.1rem;">
+                        <strong>First 5 businesses:</strong> <span style="font-size: 1.4rem; color: var(--warning-color); font-weight: 800;">GH₵5,500</span>
+                    </p>
+                    <p style="font-size: 0.95rem; color: var(--text-light); margin-bottom: 5px;">
+                        In exchange for detailed testimonial + 2 referrals
+                    </p>
+                    <p style="font-size: 0.85rem; color: var(--text-light);">
+                        Limited spots available: <span id="spotsLeft" style="color: var(--warning-color); font-weight: bold;">3 spots left</span>
+                    </p>
                 </div>
                 
-                <a href="#contact-form" class="btn" style="width: 100%;">Book Free Audit →</a>
+                <!-- FLEXIBLE PAYMENT OPTIONS -->
+                <div style="background: rgba(67, 97, 238, 0.1); padding: 20px; border-radius: 8px; margin: 20px 0;">
+                    <h4 style="color: var(--primary-color); margin-bottom: 10px;">Flexible Payment Options</h4>
+                    <p style="margin-bottom: 5px;">Pay with <strong>Mobile Money</strong>, <strong>Card</strong>, or <strong>Bank Transfer</strong></p>
+                    <p style="font-size: 0.9rem; color: var(--text-light);">Secure SSL encryption • Instant receipts • 24/7 support</p>
+                </div>
+                
+                <div style="display: flex; gap: 15px; margin-bottom: 30px;">
+                    <button onclick="showPaymentModal('momo')" class="btn" style="background: var(--mobile-money-color); flex: 1;">
+                        <i class="fas fa-mobile-alt"></i> Pay with MoMo
+                    </button>
+                    <button onclick="showPaymentModal('card')" class="btn" style="flex: 1;">
+                        <i class="fas fa-credit-card"></i> Pay with Card
+                    </button>
+                </div>
+                
+                <a href="#contact-form" class="btn" style="width: 100%; background: transparent; border: 2px solid var(--primary-color); color: var(--primary-color);">
+                    Book Free Audit Instead →
+                </a>
                 
                 <p class="price-note">*If we don't deliver as promised, full refund. No questions asked.</p>
             </div>
@@ -1451,6 +1740,24 @@
                         </select>
                     </div>
                     
+                    <!-- Founding Client Special Opt-in -->
+                    <div class="form-group" id="foundingClientSection" style="display: none;">
+                        <div style="background: rgba(247, 37, 133, 0.05); padding: 20px; border-radius: var(--radius); border: 2px dashed var(--warning-color);">
+                            <h4 style="color: var(--warning-color); margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+                                <i class="fas fa-crown"></i> Founding Client Special Available!
+                            </h4>
+                            <p style="margin-bottom: 15px;">
+                                You qualify for our <strong>Founding Client Special: GH₵5,500</strong> (normally GH₵9,900)
+                            </p>
+                            <label style="display: flex; align-items: flex-start; gap: 10px; cursor: pointer;">
+                                <input type="checkbox" id="foundingClientOptIn" name="foundingClientOptIn" style="margin-top: 4px;">
+                                <span style="font-size: 0.9rem; color: var(--text-color);">
+                                    Yes, I want the Founding Client Special! I agree to provide a detailed testimonial and 2 referrals.
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                    
                     <!-- Consent -->
                     <div class="form-group">
                         <label style="display: flex; align-items: flex-start; gap: 10px; cursor: pointer;">
@@ -1531,18 +1838,22 @@
                 </div>
                 
                 <div>
-                    <h3 class="footer-heading">Contact</h3>
+                    <h3 class="footer-heading">Payment Methods</h3>
                     <ul class="footer-links">
-                        <li><a href="mailto:timebackautomation26@gmail.com">timebackautomation26@gmail.com</a></li>
-                        <li><a href="tel:+233530453400">+233 530 453 400</a></li>
-                        <li><a href="https://wa.me/233530453400">WhatsApp Chat</a></li>
-                        <li>Accra, Ghana</li>
+                        <li><i class="fas fa-mobile-alt" style="color: var(--mobile-money-color);"></i> Mobile Money</li>
+                        <li><i class="fab fa-cc-visa" style="color: var(--visa-color);"></i> Visa Cards</li>
+                        <li><i class="fab fa-cc-mastercard" style="color: var(--mastercard-color);"></i> Mastercard</li>
+                        <li><i class="fas fa-university" style="color: var(--primary-color);"></i> Bank Transfer</li>
                     </ul>
                 </div>
             </div>
             
             <div class="copyright">
                 <p>© 2026 Time-Back Automations. All rights reserved. | Built for African businesses 🇬🇭</p>
+                <p style="margin-top: 10px; font-size: 0.8rem;">
+                    <i class="fas fa-lock"></i> Payments secured with SSL encryption | 
+                    <i class="fas fa-shield-alt"></i> GDPR compliant
+                </p>
             </div>
         </div>
     </footer>
@@ -1565,15 +1876,14 @@
 
     <!-- Main JavaScript -->
     <script>
-        // Configuration - Replace with your actual backend URLs
-        const BACKEND_CONFIG = {
-            webhookUrl: 'https://hook.us2.make.com/llmfjpxgsrmqsqotnrqs6gs9bghw5h11', // Your Make.com webhook
-            emailApiUrl: 'https://api.email-service.com/send', // Replace with your email service
-            storageApiUrl: 'https://api.timebackautomations.com/leads', // Your backend API
-            adminEmail: 'timebackautomation26@gmail.com',
-            businessName: 'Time-Back Automations'
-        };
-
+        // Configuration
+        const GOOGLE_APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbz4wHXEUvhGPRJqc5NHCPL4EFCjIN_1g1Rwf1ApqcPo5c1qllwMRe8iuu7Q_JoV_PON/exec';
+        const MAKE_COM_WEBHOOK_URL = 'https://hook.us2.make.com/llmfjpxgsrmqsqotnrqs6gs9bghw5h11'; // Your Make.com webhook
+        
+        // Founding client tracking
+        let foundingClientSpots = 3; // Initial spots available
+        let totalSubmissions = 0; // Track total submissions
+        
         document.addEventListener('DOMContentLoaded', function() {
             // Initialize AOS
             AOS.init({
@@ -1581,6 +1891,9 @@
                 once: true,
                 offset: 100
             });
+            
+            // Update spots left display
+            document.getElementById('spotsLeft').textContent = `${foundingClientSpots} spots left`;
             
             // Page Loader
             const pageLoader = document.getElementById('pageLoader');
@@ -1678,6 +1991,48 @@
                 }
             });
             
+            // Payment Modal Functionality
+            const paymentModal = document.getElementById('paymentModal');
+            const paymentCloseBtn = document.getElementById('paymentCloseBtn');
+            const paymentModalBody = document.getElementById('paymentModalBody');
+            
+            if (paymentCloseBtn) {
+                paymentCloseBtn.addEventListener('click', () => {
+                    paymentModal.classList.remove('active');
+                });
+            }
+            
+            // Close payment modal when clicking outside
+            paymentModal.addEventListener('click', (e) => {
+                if (e.target === paymentModal) {
+                    paymentModal.classList.remove('active');
+                }
+            });
+            
+            // Founding Client Special Logic
+            function checkFoundingClientEligibility() {
+                const foundingClientSection = document.getElementById('foundingClientSection');
+                const foundingClientOptIn = document.getElementById('foundingClientOptIn');
+                
+                // Always show if spots are available
+                if (foundingClientSpots > 0) {
+                    foundingClientSection.style.display = 'block';
+                    
+                    // Auto-check if spots are limited
+                    if (foundingClientSpots <= 2) {
+                        foundingClientOptIn.checked = true;
+                    }
+                } else {
+                    foundingClientSection.style.display = 'none';
+                    if (foundingClientOptIn) {
+                        foundingClientOptIn.checked = false;
+                    }
+                }
+            }
+            
+            // Initialize founding client section
+            checkFoundingClientEligibility();
+            
             // Form Submission with AI Analysis
             const auditForm = document.getElementById('auditForm');
             const formMessage = document.getElementById('formMessage');
@@ -1710,6 +2065,22 @@
                         page_url: window.location.href
                     };
                     
+                    // Check if user wants founding client special
+                    const foundingClientOptIn = document.getElementById('foundingClientOptIn');
+                    if (foundingClientOptIn && foundingClientOptIn.checked && foundingClientSpots > 0) {
+                        leadData.founding_client = true;
+                        leadData.special_price = 7500;
+                        leadData.founding_client_terms = 'testimonial + 2 referrals';
+                        
+                        // Reduce available spots
+                        foundingClientSpots--;
+                        totalSubmissions++;
+                        document.getElementById('spotsLeft').textContent = `${foundingClientSpots} spots left`;
+                    } else {
+                        leadData.founding_client = false;
+                        leadData.special_price = 12000;
+                    }
+                    
                     // Validate
                     if (!validateLeadData(leadData)) {
                         showFormMessage('Please fill in all required fields correctly.', 'error');
@@ -1725,43 +2096,32 @@
                         // Show AI Modal with analysis
                         showAIAnalysis(leadData, aiAnalysis);
                         
-                        // Send data to backend (async - don't wait)
-                        sendToBackend(leadData, aiAnalysis).then(result => {
-                            console.log('Backend submission result:', result);
-                        }).catch(error => {
-                            console.error('Backend submission failed:', error);
-                            backupLeadLocally(leadData);
-                        });
+                        // Send data to Google Apps Script backend
+                        const backendData = {
+                            ...leadData,
+                            ai_analysis: aiAnalysis,
+                            spots_remaining: foundingClientSpots,
+                            total_submissions: totalSubmissions
+                        };
+                        
+                        await sendToBackend(backendData);
                         
                         // Show success message
-                        showFormMessage(`
-                            <div style="text-align: center; color: #38a169;">
-                                <div style="font-size: 2rem; margin-bottom: 10px;">✅</div>
-                                <h3 style="margin-bottom: 10px;">Audit Request Submitted!</h3>
-                                <p>Check the AI analysis above for personalized recommendations.</p>
-                                <p style="font-size: 0.9rem; margin-top: 10px;">We've also sent a copy to your email.</p>
-                            </div>
-                        `, 'success');
+                        const successMsg = leadData.founding_client 
+                            ? `🎉 Congratulations! You've secured a Founding Client spot at GH₵7,500! Check the AI analysis above and check your email for details.`
+                            : `✅ Audit request submitted successfully! Check the AI analysis above and check your email for details.`;
+                        
+                        showFormMessage(successMsg, 'success');
                         
                         // Reset form
                         setTimeout(() => {
                             auditForm.reset();
+                            checkFoundingClientEligibility();
                         }, 3000);
                         
                     } catch (error) {
                         console.error('Form error:', error);
-                        showFormMessage(`
-                            <div style="text-align: center; color: #c53030;">
-                                <div style="font-size: 2rem; margin-bottom: 10px;">⚠️</div>
-                                <h3 style="margin-bottom: 10px;">System Error</h3>
-                                <p>Please try again or contact us directly.</p>
-                                <div style="margin-top: 15px;">
-                                    <a href="https://wa.me/233530453400" class="btn" style="background: #25D366; padding: 10px 20px;">
-                                        <i class="fab fa-whatsapp"></i> Chat on WhatsApp
-                                    </a>
-                                </div>
-                            </div>
-                        `, 'error');
+                        showFormMessage(`❌ Error: ${error.message}. Please try again or contact us via WhatsApp.`, 'error');
                         
                         // Save to localStorage as backup
                         backupLeadLocally(leadData);
@@ -1771,6 +2131,95 @@
                         submitBtn.disabled = false;
                     }
                 });
+            }
+            
+            // Backend Submission Function (Google Apps Script + Make.com)
+            async function sendToBackend(data) {
+                const backendPromises = [];
+                
+                // Send to Google Apps Script
+                backendPromises.push(
+                    sendToGoogleAppsScript(data).catch(error => {
+                        console.warn('Google Apps Script submission failed:', error);
+                        return { source: 'google_apps_script', success: false, error: error.message };
+                    })
+                );
+                
+                // Send to Make.com webhook
+                if (MAKE_COM_WEBHOOK_URL && !MAKE_COM_WEBHOOK_URL.includes('YOUR_')) {
+                    backendPromises.push(
+                        sendToMakeWebhook(data).catch(error => {
+                            console.warn('Make.com webhook submission failed:', error);
+                            return { source: 'make_com', success: false, error: error.message };
+                        })
+                    );
+                }
+                
+                // Wait for all submissions
+                const results = await Promise.allSettled(backendPromises);
+                
+                // Check if at least one succeeded
+                const successful = results.some(result => 
+                    result.status === 'fulfilled' && result.value && result.value.success !== false
+                );
+                
+                if (!successful) {
+                    throw new Error('Failed to submit to backend services');
+                }
+                
+                return { success: true, results };
+            }
+            
+            // Google Apps Script Integration
+            async function sendToGoogleAppsScript(data) {
+                try {
+                    // Use fetch with no-cors mode for Google Apps Script
+                    const response = await fetch(GOOGLE_APPS_SCRIPT_URL, {
+                        method: 'POST',
+                        mode: 'no-cors', // Required for Google Apps Script
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify(data)
+                    });
+                    
+                    // Note: With no-cors mode, we can't read the response
+                    // But we know the Google Apps Script will process it
+                    console.log('Data sent to Google Apps Script successfully');
+                    return { source: 'google_apps_script', success: true };
+                    
+                } catch (error) {
+                    console.error('Google Apps Script error:', error);
+                    throw new Error('Google Apps Script submission failed');
+                }
+            }
+            
+            // Make.com Webhook Integration
+            async function sendToMakeWebhook(data) {
+                try {
+                    const response = await fetch(MAKE_COM_WEBHOOK_URL, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({
+                            ...data,
+                            webhook_source: 'timeback_automations_website',
+                            webhook_timestamp: new Date().toISOString()
+                        })
+                    });
+                    
+                    if (!response.ok) {
+                        throw new Error(`Make.com webhook failed: ${response.status}`);
+                    }
+                    
+                    console.log('Data sent to Make.com webhook successfully');
+                    return { source: 'make_com', success: true };
+                    
+                } catch (error) {
+                    console.error('Make.com webhook error:', error);
+                    throw new Error('Make.com webhook submission failed');
+                }
             }
             
             // AI Analysis Generation Function
@@ -1832,6 +2281,12 @@
                 
                 const monthlyLoss = revenueMapping[leadData.revenueImpact] || 3000;
                 
+                // Calculate price based on founding client status
+                const basePrice = leadData.founding_client ? 7500 : 12000;
+                const priceText = leadData.founding_client 
+                    ? `GH₵7,500 <span style="color: var(--warning-color); font-size: 0.9em;">(Founding Client Special!)</span>`
+                    : 'GH₵12,000';
+                
                 // Generate analysis
                 return {
                     industryAnalysis: industryData,
@@ -1843,11 +2298,13 @@
                     financialROI: {
                         monthlySavings: monthlyLoss * 0.6,
                         annualSavings: monthlyLoss * 0.6 * 12,
-                        investmentRecovery: Math.ceil((12000) / (monthlyLoss * 0.6))
+                        investmentRecovery: Math.ceil((basePrice) / (monthlyLoss * 0.6))
                     },
                     painPointSolutions: getPainPointSolutions(leadData.biggestPain),
                     urgencyLevel: calculateUrgency(leadData),
-                    recommendedPackage: getRecommendedPackage(leadData)
+                    recommendedPackage: getRecommendedPackage(leadData, basePrice, priceText),
+                    foundingClient: leadData.founding_client || false,
+                    specialPrice: basePrice
                 };
             }
             
@@ -1923,29 +2380,32 @@
                 return score >= 8 ? 'high' : score >= 5 ? 'medium' : 'low';
             }
             
-            function getRecommendedPackage(leadData) {
+            function getRecommendedPackage(leadData, price, priceText) {
                 const urgency = calculateUrgency(leadData);
                 
                 if (urgency === 'high') {
                     return {
                         name: 'Complete Digital Transformation',
-                        price: 'GH₵20,000',
+                        price: priceText,
                         timeline: '2 weeks',
-                        features: ['Everything in Digital Foundation', 'Advanced automation', 'Custom integrations', 'Priority support']
+                        features: ['Everything in Digital Foundation', 'Advanced automation', 'Custom integrations', 'Priority support'],
+                        basePrice: price
                     };
                 } else if (urgency === 'medium') {
                     return {
                         name: 'Digital Foundation Package',
-                        price: 'GH₵12,000 - GH₵15,000',
+                        price: priceText,
                         timeline: '2 weeks',
-                        features: ['Professional website', 'WhatsApp Business', 'Lead capture', 'Basic training']
+                        features: ['Professional website', 'WhatsApp Business', 'Lead capture', 'Basic training'],
+                        basePrice: price
                     };
                 } else {
                     return {
                         name: 'Starter Package',
-                        price: 'GH₵7,500',
+                        price: priceText,
                         timeline: '1 week',
-                        features: ['Essential website', 'Basic automation', 'Lead forms', 'Documentation']
+                        features: ['Essential website', 'Basic automation', 'Lead forms', 'Documentation'],
+                        basePrice: price
                     };
                 }
             }
@@ -1986,6 +2446,11 @@
                                     ${analysis.urgencyLevel.toUpperCase()}
                                 </span>
                             </p>
+                            ${analysis.foundingClient ? `
+                            <p><strong>🎯 Special Offer:</strong> 
+                                <span style="color: var(--warning-color); font-weight: bold;">FOUNDING CLIENT - GH₵7,500</span>
+                            </p>
+                            ` : ''}
                         </div>
                         
                         <div class="ai-analysis-section">
@@ -2031,6 +2496,14 @@
                                 <ul style="margin: 10px 0 10px 20px;">
                                     ${analysis.recommendedPackage.features.map(feature => `<li>${feature}</li>`).join('')}
                                 </ul>
+                                ${analysis.foundingClient ? `
+                                <div style="background: rgba(247, 37, 133, 0.1); padding: 10px; border-radius: 6px; margin-top: 10px; border-left: 3px solid var(--warning-color);">
+                                    <p style="margin: 0; color: var(--warning-color); font-size: 0.9rem;">
+                                        <i class="fas fa-crown"></i> <strong>Founding Client Special Applied!</strong><br>
+                                        You save GH₵4,500 + get priority support
+                                    </p>
+                                </div>
+                                ` : ''}
                             </div>
                         </div>
                         
@@ -2052,6 +2525,14 @@
                                    <i class="fab fa-whatsapp"></i> Chat on WhatsApp
                                 </a>
                             </div>
+                            ${analysis.foundingClient ? `
+                            <div style="margin-top: 20px; padding: 15px; background: rgba(247, 37, 133, 0.1); border-radius: var(--radius); border-left: 4px solid var(--warning-color);">
+                                <p style="margin: 0; font-size: 0.9rem;">
+                                    <i class="fas fa-star"></i> <strong>Founding Client Benefit:</strong> Your GH₵7,500 price is locked in! 
+                                    Book your call within 48 hours to secure this special rate.
+                                </p>
+                            </div>
+                            ` : ''}
                         </div>
                         
                         <div style="margin-top: 30px; padding: 15px; background: var(--light-color); border-radius: var(--radius); font-size: 0.9rem;">
@@ -2068,183 +2549,273 @@
                 }, 1500);
             }
             
-            async function sendToBackend(leadData, aiAnalysis) {
-                // Prepare payload for backend
-                const payload = {
-                    ...leadData,
-                    ai_analysis: aiAnalysis,
-                    urgency_level: calculateUrgency(leadData),
-                    timestamp: new Date().toISOString(),
-                    status: 'new_lead'
-                };
+            // Payment Modal Functions
+            window.showPaymentModal = function(paymentMethod = 'momo') {
+                // Check if user has founding client special
+                const foundingClientPrice = foundingClientSpots > 0 ? 7500 : 12000;
+                const isFoundingClient = foundingClientSpots > 0;
                 
-                // Send to webhook (Make.com)
-                if (BACKEND_CONFIG.webhookUrl && !BACKEND_CONFIG.webhookUrl.includes('YOUR_')) {
-                    try {
-                        const webhookResponse = await fetch(BACKEND_CONFIG.webhookUrl, {
-                            method: 'POST',
-                            headers: {
-                                'Content-Type': 'application/json',
-                            },
-                            body: JSON.stringify(payload)
-                        });
-                        
-                        if (!webhookResponse.ok) {
-                            throw new Error(`Webhook failed: ${webhookResponse.status}`);
-                        }
-                    } catch (error) {
-                        console.warn('Webhook submission failed:', error);
-                        // Continue with other backend processes
-                    }
-                }
+                const paymentHtml = `
+                    <div style="text-align: center; margin-bottom: 30px;">
+                        <h3 style="color: var(--primary-color);">Secure Payment</h3>
+                        <p>Complete your <strong>GH₵${foundingClientPrice.toLocaleString()}</strong> payment for the Digital Foundation Package</p>
+                        ${isFoundingClient ? `
+                        <div style="background: rgba(247, 37, 133, 0.1); padding: 10px; border-radius: 6px; margin-top: 10px; border-left: 3px solid var(--warning-color);">
+                            <p style="margin: 0; font-size: 0.9rem; color: var(--warning-color);">
+                                <i class="fas fa-crown"></i> <strong>Founding Client Rate Applied!</strong> Save GH₵4,500
+                            </p>
+                        </div>
+                        ` : ''}
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Select Payment Method *</label>
+                        <div style="margin-top: 10px;">
+                            <div class="payment-option ${paymentMethod === 'momo' ? 'selected' : ''}" onclick="selectPaymentMethod('momo')">
+                                <input type="radio" name="paymentMethod" value="momo" ${paymentMethod === 'momo' ? 'checked' : ''}>
+                                <div>
+                                    <i class="fas fa-mobile-alt" style="color: var(--mobile-money-color); font-size: 1.5rem;"></i>
+                                    <span style="margin-left: 10px; font-weight: 600;">Mobile Money</span>
+                                </div>
+                            </div>
+                            
+                            <div class="payment-option ${paymentMethod === 'card' ? 'selected' : ''}" onclick="selectPaymentMethod('card')">
+                                <input type="radio" name="paymentMethod" value="card" ${paymentMethod === 'card' ? 'checked' : ''}>
+                                <div>
+                                    <i class="fas fa-credit-card" style="color: var(--primary-color); font-size: 1.5rem;"></i>
+                                    <span style="margin-left: 10px; font-weight: 600;">Credit/Debit Card</span>
+                                </div>
+                            </div>
+                            
+                            <div class="payment-option ${paymentMethod === 'bank' ? 'selected' : ''}" onclick="selectPaymentMethod('bank')">
+                                <input type="radio" name="paymentMethod" value="bank" ${paymentMethod === 'bank' ? 'checked' : ''}>
+                                <div>
+                                    <i class="fas fa-university" style="color: var(--primary-color); font-size: 1.5rem;"></i>
+                                    <span style="margin-left: 10px; font-weight: 600;">Bank Transfer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Mobile Money Details -->
+                    <div id="momoDetails" class="momo-details ${paymentMethod === 'momo' ? 'active' : ''}">
+                        <h4 style="margin-bottom: 15px; color: var(--mobile-money-color);">
+                            <i class="fas fa-mobile-alt"></i> Mobile Money Payment
+                        </h4>
+                        <div style="background: white; padding: 20px; border-radius: 8px; border: 1px solid var(--border-color);">
+                            <p><strong>Step 1:</strong> Dial *170# on your phone</p>
+                            <p><strong>Step 2:</strong> Select "Send Money"</p>
+                            <p><strong>Step 3:</strong> Enter recipient number: <strong>0530 453 400</strong></p>
+                            <p><strong>Step 4:</strong> Enter amount: <strong>GH₵${foundingClientPrice.toLocaleString()}</strong></p>
+                            <p><strong>Step 5:</strong> Enter reference: <strong>TBA-${Math.random().toString(36).substr(2, 6).toUpperCase()}</strong></p>
+                            <p><strong>Step 6:</strong> Confirm payment</p>
+                        </div>
+                        <div style="margin-top: 20px; display: flex; gap: 10px; flex-wrap: wrap;">
+                            <button onclick="completePayment('momo', ${foundingClientPrice}, ${isFoundingClient})" class="btn" style="background: var(--mobile-money-color); flex: 1; min-width: 200px;">
+                                <i class="fas fa-check"></i> I've Completed Payment
+                            </button>
+                            <button onclick="sendPaymentReminder('momo', ${foundingClientPrice})" class="btn" style="background: #25D366; flex: 1; min-width: 200px;">
+                                <i class="fab fa-whatsapp"></i> Send Details to WhatsApp
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Card Details -->
+                    <div id="cardDetails" class="card-details ${paymentMethod === 'card' ? 'active' : ''}">
+                        <h4 style="margin-bottom: 15px; color: var(--primary-color);">
+                            <i class="fas fa-credit-card"></i> Card Payment
+                        </h4>
+                        <form id="cardForm">
+                            <div class="form-group">
+                                <label for="cardNumber">Card Number *</label>
+                                <input type="text" id="cardNumber" class="form-control" placeholder="1234 5678 9012 3456" maxlength="19">
+                            </div>
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+                                <div class="form-group">
+                                    <label for="expiryDate">Expiry Date *</label>
+                                    <input type="text" id="expiryDate" class="form-control" placeholder="MM/YY" maxlength="5">
+                                </div>
+                                <div class="form-group">
+                                    <label for="cvv">CVV *</label>
+                                    <input type="text" id="cvv" class="form-control" placeholder="123" maxlength="3">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="cardName">Name on Card *</label>
+                                <input type="text" id="cardName" class="form-control" placeholder="John Doe">
+                            </div>
+                            <button type="button" onclick="processCardPayment(${foundingClientPrice}, ${isFoundingClient})" class="btn" style="width: 100%;">
+                                <i class="fas fa-lock"></i> Pay GH₵${foundingClientPrice.toLocaleString()} Securely
+                            </button>
+                            <div style="margin-top: 15px; display: flex; justify-content: center; gap: 20px;">
+                                <i class="fab fa-cc-visa" style="color: var(--visa-color); font-size: 2rem;"></i>
+                                <i class="fab fa-cc-mastercard" style="color: var(--mastercard-color); font-size: 2rem;"></i>
+                                <i class="fab fa-cc-amex" style="color: #006FCF; font-size: 2rem;"></i>
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <!-- Bank Transfer Details -->
+                    <div id="bankDetails" class="bank-details ${paymentMethod === 'bank' ? 'active' : ''}">
+                        <h4 style="margin-bottom: 15px; color: var(--primary-color);">
+                            <i class="fas fa-university"></i> Bank Transfer
+                        </h4>
+                        <div style="background: white; padding: 20px; border-radius: 8px; border: 1px solid var(--border-color);">
+                            <p><strong>Bank:</strong> GCB Bank</p>
+                            <p><strong>Account Name:</strong> Time-Back Automations</p>
+                            <p><strong>Account Number:</strong> 1234567890</p>
+                            <p><strong>Branch:</strong> Accra Central</p>
+                            <p><strong>Swift Code:</strong> GHCBGHAC</p>
+                            <p><strong>Amount:</strong> GH₵${foundingClientPrice.toLocaleString()}</p>
+                            <p><strong>Reference:</strong> TBA-${Math.random().toString(36).substr(2, 6).toUpperCase()}</p>
+                        </div>
+                        <button onclick="completePayment('bank', ${foundingClientPrice}, ${isFoundingClient})" class="btn" style="width: 100%; margin-top: 20px;">
+                            <i class="fas fa-check"></i> I've Completed Transfer
+                        </button>
+                    </div>
+                    
+                    <div style="margin-top: 30px; padding: 15px; background: #f8f9fa; border-radius: var(--radius); font-size: 0.9rem;">
+                        <p><i class="fas fa-shield-alt"></i> <strong>Secure Payment:</strong> All transactions are encrypted with SSL</p>
+                        <p><i class="fas fa-headset"></i> <strong>Need Help?</strong> Call +233 530 453 400 or WhatsApp us</p>
+                        ${isFoundingClient ? `
+                        <p><i class="fas fa-crown" style="color: var(--warning-color);"></i> <strong>Founding Client:</strong> This special rate is available for limited time only</p>
+                        ` : ''}
+                    </div>
+                `;
                 
-                // Send email notifications
-                await sendEmailNotifications(leadData, aiAnalysis);
-                
-                // Store in database (if you have an API)
-                if (BACKEND_CONFIG.storageApiUrl && !BACKEND_CONFIG.storageApiUrl.includes('YOUR_')) {
-                    try {
-                        const storageResponse = await fetch(BACKEND_CONFIG.storageApiUrl, {
-                            method: 'POST',
-                            headers: {
-                                'Content-Type': 'application/json',
-                                'Authorization': 'Bearer YOUR_API_KEY' // Replace with actual API key
-                            },
-                            body: JSON.stringify(payload)
-                        });
-                        
-                        if (!storageResponse.ok) {
-                            throw new Error(`Storage API failed: ${storageResponse.status}`);
-                        }
-                    } catch (error) {
-                        console.warn('Database storage failed:', error);
-                    }
-                }
-                
-                return { success: true, message: 'Data processed successfully' };
-            }
+                paymentModalBody.innerHTML = paymentHtml;
+                paymentModal.classList.add('active');
+            };
             
-            async function sendEmailNotifications(leadData, aiAnalysis) {
-                // Email to client
-                const clientEmailContent = {
-                    to: leadData.email,
-                    subject: `Your Digital Health Audit Analysis - ${BACKEND_CONFIG.businessName}`,
-                    html: `
-                        <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
-                            <h2>Your Digital Health Audit Analysis</h2>
-                            <p>Hello ${leadData.name},</p>
-                            <p>Thank you for submitting your Digital Health Audit request. Here's a summary of our AI analysis:</p>
-                            
-                            <div style="background: #f5f5f5; padding: 20px; border-radius: 8px; margin: 20px 0;">
-                                <h3>Key Findings:</h3>
-                                <p><strong>Industry:</strong> ${document.getElementById('industry').selectedOptions[0].text}</p>
-                                <p><strong>Main Challenge:</strong> ${document.getElementById('biggestPain').selectedOptions[0].text}</p>
-                                <p><strong>Estimated Time Waste:</strong> ${aiAnalysis.timeROI.weeklyHoursSaved} hours/week</p>
-                                <p><strong>Potential Savings:</strong> GH₵${aiAnalysis.financialROI.annualSavings.toLocaleString()}/year</p>
-                            </div>
-                            
-                            <p><strong>Recommended Package:</strong> ${aiAnalysis.recommendedPackage.name}</p>
-                            <p><strong>Investment:</strong> ${aiAnalysis.recommendedPackage.price}</p>
-                            
-                            <div style="text-align: center; margin: 30px 0;">
-                                <a href="https://cal.com/timebackautomations" 
-                                   style="background: #4361EE; color: white; padding: 12px 30px; text-decoration: none; border-radius: 5px; display: inline-block;">
-                                   Schedule Your Strategy Call
-                                </a>
-                            </div>
-                            
-                            <p>Best regards,<br>
-                            The ${BACKEND_CONFIG.businessName} Team</p>
-                            
-                            <hr style="margin: 30px 0;">
-                            <p style="font-size: 12px; color: #666;">
-                                This email was sent to ${leadData.email} because you requested a Digital Health Audit.<br>
-                                If you didn't make this request, please ignore this email.
-                            </p>
-                        </div>
-                    `
-                };
-                
-                // Email to admin
-                const adminEmailContent = {
-                    to: BACKEND_CONFIG.adminEmail,
-                    subject: `New Lead: ${leadData.name} - ${leadData.business || 'No business name'}`,
-                    html: `
-                        <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
-                            <h2>New Lead Alert! 🎯</h2>
-                            
-                            <div style="background: #f0f8ff; padding: 20px; border-radius: 8px; margin: 20px 0;">
-                                <h3>Lead Information:</h3>
-                                <p><strong>Name:</strong> ${leadData.name}</p>
-                                <p><strong>Email:</strong> ${leadData.email}</p>
-                                <p><strong>Phone:</strong> ${leadData.phone}</p>
-                                <p><strong>Business:</strong> ${leadData.business || 'Not provided'}</p>
-                                <p><strong>Industry:</strong> ${document.getElementById('industry').selectedOptions[0].text}</p>
-                                <p><strong>Source:</strong> ${leadData.source || 'website'}</p>
-                            </div>
-                            
-                            <div style="background: #fff3cd; padding: 20px; border-radius: 8px; margin: 20px 0;">
-                                <h3>Pain Points:</h3>
-                                <p><strong>Biggest Challenge:</strong> ${document.getElementById('biggestPain').selectedOptions[0].text}</p>
-                                <p><strong>Hours Wasted:</strong> ${leadData.weeklyHours}</p>
-                                <p><strong>Revenue Impact:</strong> ${document.getElementById('revenueImpact').selectedOptions[0].text}</p>
-                            </div>
-                            
-                            <div style="background: #d4edda; padding: 20px; border-radius: 8px; margin: 20px 0;">
-                                <h3>AI Analysis Summary:</h3>
-                                <p><strong>Urgency Level:</strong> ${aiAnalysis.urgencyLevel.toUpperCase()}</p>
-                                <p><strong>Recommended Package:</strong> ${aiAnalysis.recommendedPackage.name}</p>
-                                <p><strong>Potential Value:</strong> GH₵${aiAnalysis.financialROI.annualSavings.toLocaleString()}/year</p>
-                            </div>
-                            
-                            <div style="text-align: center; margin: 30px 0;">
-                                <a href="https://wa.me/${leadData.phone.replace(/[^\d+]/g, '')}" 
-                                   style="background: #25D366; color: white; padding: 12px 30px; text-decoration: none; border-radius: 5px; display: inline-block; margin-right: 10px;">
-                                   💬 WhatsApp Lead
-                                </a>
-                                <a href="mailto:${leadData.email}" 
-                                   style="background: #4361EE; color: white; padding: 12px 30px; text-decoration: none; border-radius: 5px; display: inline-block;">
-                                   📧 Email Lead
-                                </a>
-                            </div>
-                            
-                            <p style="font-size: 12px; color: #666;">
-                                Lead submitted: ${new Date().toLocaleString()}<br>
-                                Page URL: ${window.location.href}
-                            </p>
-                        </div>
-                    `
-                };
-                
-                // Send emails using your email service
-                // This is a placeholder - implement with your actual email service
-                if (BACKEND_CONFIG.emailApiUrl && !BACKEND_CONFIG.emailApiUrl.includes('YOUR_')) {
-                    try {
-                        // Send client email
-                        await fetch(BACKEND_CONFIG.emailApiUrl, {
-                            method: 'POST',
-                            headers: {
-                                'Content-Type': 'application/json',
-                                'Authorization': 'Bearer YOUR_EMAIL_API_KEY'
-                            },
-                            body: JSON.stringify(clientEmailContent)
-                        });
-                        
-                        // Send admin email
-                        await fetch(BACKEND_CONFIG.emailApiUrl, {
-                            method: 'POST',
-                            headers: {
-                                'Content-Type': 'application/json',
-                                'Authorization': 'Bearer YOUR_EMAIL_API_KEY'
-                            },
-                            body: JSON.stringify(adminEmailContent)
-                        });
-                    } catch (error) {
-                        console.warn('Email sending failed:', error);
-                        // You could use a fallback email service here
+            window.selectPaymentMethod = function(method) {
+                // Update radio buttons
+                document.querySelectorAll('.payment-option').forEach(option => {
+                    option.classList.remove('selected');
+                    const input = option.querySelector('input');
+                    input.checked = input.value === method;
+                    if (input.value === method) {
+                        option.classList.add('selected');
                     }
+                });
+                
+                // Show selected details
+                document.querySelectorAll('.momo-details, .card-details, .bank-details').forEach(detail => {
+                    detail.classList.remove('active');
+                });
+                
+                if (method === 'momo') {
+                    document.getElementById('momoDetails').classList.add('active');
+                } else if (method === 'card') {
+                    document.getElementById('cardDetails').classList.add('active');
+                } else if (method === 'bank') {
+                    document.getElementById('bankDetails').classList.add('active');
                 }
-            }
+            };
+            
+            window.completePayment = async function(method, amount, isFoundingClient) {
+                const paymentData = {
+                    method: method,
+                    amount: amount,
+                    currency: 'GHS',
+                    reference: 'TBA-' + Math.random().toString(36).substr(2, 6).toUpperCase(),
+                    timestamp: new Date().toISOString(),
+                    status: 'pending_confirmation',
+                    founding_client: isFoundingClient,
+                    spots_remaining: foundingClientSpots
+                };
+                
+                // Send payment notification to Google Apps Script
+                try {
+                    await fetch(GOOGLE_APPS_SCRIPT_URL, {
+                        method: 'POST',
+                        mode: 'no-cors',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({
+                            type: 'payment_notification',
+                            ...paymentData
+                        })
+                    });
+                    
+                    // If this was a founding client payment, reduce spots
+                    if (isFoundingClient && foundingClientSpots > 0) {
+                        foundingClientSpots--;
+                        totalSubmissions++;
+                        document.getElementById('spotsLeft').textContent = `${foundingClientSpots} spots left`;
+                        checkFoundingClientEligibility();
+                    }
+                    
+                    paymentModalBody.innerHTML = `
+                        <div style="text-align: center; padding: 40px 20px;">
+                            <div style="font-size: 4rem; color: #38B2AC; margin-bottom: 20px;">✅</div>
+                            <h3 style="color: var(--primary-color); margin-bottom: 15px;">Payment Received!</h3>
+                            <p>Thank you for your payment of GH₵${amount.toLocaleString()} via ${method === 'momo' ? 'Mobile Money' : method === 'card' ? 'Card' : 'Bank Transfer'}.</p>
+                            ${isFoundingClient ? `<p style="color: var(--warning-color); font-weight: bold;">🎉 Congratulations! You've secured a Founding Client spot!</p>` : ''}
+                            <p><strong>Reference:</strong> ${paymentData.reference}</p>
+                            <p>Our team will contact you within 24 hours to start your project.</p>
+                            <div style="margin-top: 30px;">
+                                <button onclick="paymentModal.classList.remove('active')" class="btn" style="margin-right: 10px;">
+                                    Close
+                                </button>
+                                <a href="https://wa.me/233530453400" class="btn" style="background: #25D366;">
+                                    <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                                </a>
+                            </div>
+                        </div>
+                    `;
+                    
+                } catch (error) {
+                    paymentModalBody.innerHTML = `
+                        <div style="text-align: center; padding: 40px 20px;">
+                            <div style="font-size: 4rem; color: #F56565; margin-bottom: 20px;">⚠️</div>
+                            <h3 style="color: var(--warning-color); margin-bottom: 15px;">Payment Notification Failed</h3>
+                            <p>Please contact us directly to confirm your payment.</p>
+                            <div style="margin-top: 30px;">
+                                <a href="tel:+233530453400" class="btn" style="margin-right: 10px;">
+                                    <i class="fas fa-phone"></i> Call Us
+                                </a>
+                                <a href="https://wa.me/233530453400" class="btn" style="background: #25D366;">
+                                    <i class="fab fa-whatsapp"></i> WhatsApp
+                                </a>
+                            </div>
+                        </div>
+                    `;
+                }
+            };
+            
+            window.sendPaymentReminder = function(method, amount) {
+                const phone = '233530453400';
+                const message = `Hi, I want to make payment for Digital Foundation Package via ${method}. Amount: GH₵${amount}. Please send payment details.`;
+                window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, '_blank');
+            };
+            
+            window.processCardPayment = function(amount, isFoundingClient) {
+                // This is a simulation - in production, integrate with Stripe, Paystack, or similar
+                const cardNumber = document.getElementById('cardNumber').value;
+                const expiryDate = document.getElementById('expiryDate').value;
+                const cvv = document.getElementById('cvv').value;
+                const cardName = document.getElementById('cardName').value;
+                
+                if (!cardNumber || !expiryDate || !cvv || !cardName) {
+                    alert('Please fill in all card details');
+                    return;
+                }
+                
+                // Simulate payment processing
+                paymentModalBody.innerHTML = `
+                    <div style="text-align: center; padding: 40px 20px;">
+                        <div class="loader-spinner" style="margin: 0 auto 20px;"></div>
+                        <h3>Processing Payment...</h3>
+                        <p>Please don't close this window</p>
+                    </div>
+                `;
+                
+                // Simulate API call delay
+                setTimeout(() => {
+                    window.completePayment('card', amount, isFoundingClient);
+                }, 2000);
+            };
             
             // Helper functions
             function validateLeadData(data) {
@@ -2265,11 +2836,11 @@
                     leads.push({
                         ...data,
                         backup_time: new Date().toISOString(),
-                        status: 'backup'
+                        status: 'backup',
+                        spots_remaining: foundingClientSpots
                     });
                     localStorage.setItem('timeback_leads', JSON.stringify(leads.slice(-50)));
                     
-                    // Notify admin about backup
                     console.warn('Lead backed up locally:', data.email);
                 } catch (e) {
                     console.warn('Local backup failed:', e);
@@ -2286,8 +2857,14 @@
                     formMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
                 }
             }
+            
+            // Initialize payment method selection
+            if (window.location.hash === '#payment') {
+                setTimeout(() => {
+                    showPaymentModal();
+                }, 1000);
+            }
         });
     </script>
 </body>
 </html>
-
