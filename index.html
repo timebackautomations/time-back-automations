@@ -1877,7 +1877,7 @@
     <!-- Main JavaScript -->
     <script>
         // Configuration
-        const GOOGLE_APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbz4wHXEUvhGPRJqc5NHCPL4EFCjIN_1g1Rwf1ApqcPo5c1qllwMRe8iuu7Q_JoV_PON/exec';
+        const GOOGLE_APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbz-UoO6x37ihBejW3m_6AL_m_YV9luqTSxuNNFD5m_te4W98mofsYoLTjTRQlni1fq8/exec';
         const MAKE_COM_WEBHOOK_URL = 'https://hook.us2.make.com/llmfjpxgsrmqsqotnrqs6gs9bghw5h11'; // Your Make.com webhook
         
         // Founding client tracking
@@ -2069,7 +2069,7 @@
                     const foundingClientOptIn = document.getElementById('foundingClientOptIn');
                     if (foundingClientOptIn && foundingClientOptIn.checked && foundingClientSpots > 0) {
                         leadData.founding_client = true;
-                        leadData.special_price = 7500;
+                        leadData.special_price = 5500;
                         leadData.founding_client_terms = 'testimonial + 2 referrals';
                         
                         // Reduce available spots
@@ -2078,7 +2078,7 @@
                         document.getElementById('spotsLeft').textContent = `${foundingClientSpots} spots left`;
                     } else {
                         leadData.founding_client = false;
-                        leadData.special_price = 12000;
+                        leadData.special_price = 9900;
                     }
                     
                     // Validate
@@ -2108,7 +2108,7 @@
                         
                         // Show success message
                         const successMsg = leadData.founding_client 
-                            ? `🎉 Congratulations! You've secured a Founding Client spot at GH₵7,500! Check the AI analysis above and check your email for details.`
+                            ? `🎉 Congratulations! You've secured a Founding Client spot at GH₵5,500! Check the AI analysis above and check your email for details.`
                             : `✅ Audit request submitted successfully! Check the AI analysis above and check your email for details.`;
                         
                         showFormMessage(successMsg, 'success');
@@ -2282,10 +2282,10 @@
                 const monthlyLoss = revenueMapping[leadData.revenueImpact] || 3000;
                 
                 // Calculate price based on founding client status
-                const basePrice = leadData.founding_client ? 7500 : 12000;
+                const basePrice = leadData.founding_client ? 5500 : 9900;
                 const priceText = leadData.founding_client 
-                    ? `GH₵7,500 <span style="color: var(--warning-color); font-size: 0.9em;">(Founding Client Special!)</span>`
-                    : 'GH₵12,000';
+                    ? `GH₵5,500 <span style="color: var(--warning-color); font-size: 0.9em;">(Founding Client Special!)</span>`
+                    : 'GH₵9,900';
                 
                 // Generate analysis
                 return {
@@ -2552,7 +2552,7 @@
             // Payment Modal Functions
             window.showPaymentModal = function(paymentMethod = 'momo') {
                 // Check if user has founding client special
-                const foundingClientPrice = foundingClientSpots > 0 ? 7500 : 12000;
+                const foundingClientPrice = foundingClientSpots > 0 ? 9900 : 9900;
                 const isFoundingClient = foundingClientSpots > 0;
                 
                 const paymentHtml = `
@@ -2562,7 +2562,7 @@
                         ${isFoundingClient ? `
                         <div style="background: rgba(247, 37, 133, 0.1); padding: 10px; border-radius: 6px; margin-top: 10px; border-left: 3px solid var(--warning-color);">
                             <p style="margin: 0; font-size: 0.9rem; color: var(--warning-color);">
-                                <i class="fas fa-crown"></i> <strong>Founding Client Rate Applied!</strong> Save GH₵4,500
+                                <i class="fas fa-crown"></i> <strong>Founding Client Rate Applied!</strong> Save GH₵4,400
                             </p>
                         </div>
                         ` : ''}
